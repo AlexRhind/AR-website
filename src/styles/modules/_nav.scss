@@ -1,0 +1,87 @@
+@use "../base" as *;
+@use "buttons" as *;
+
+
+//left hand side
+
+nav div.grid-container {
+    //border: 1px solid purple;
+}
+
+nav .col-6 {
+    //border: 1px solid orange;
+    height: 85px;
+    position: relative;
+    
+}
+
+nav div.navLogo {
+    //border: 1px solid green;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+nav div.navLogo img{
+    //min-width: 180px;
+    display: block;
+    width: 70%;
+    max-width: 260px;
+}
+
+//right hand side 
+
+nav .navbar.col-6 {
+    position: relative;
+}
+
+nav div.navElements ul {
+    margin: 0;
+}
+
+nav .navTopBar {
+    background-color: $primary-color;
+    height: 30px;
+}
+
+nav li.navButton {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $dark-grey;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 38px;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  //border: 1px solid green;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+nav li.navButton a {
+    color: $mid-grey;
+    font-weight: 300;
+    text-decoration: none;
+    &:hover {
+      color: $dark-grey;
+    }
+  }
+
+  nav a.current {
+    border-bottom: 4px solid $turq;
+    color: $dark-grey;
+    font-weight: 600;
+}
+
+
+.navRoundel img{
+   // width: 12rem;
+   // position: absolute;
+   // top: 0rem;
+   // right:5%;
+   display: none;
+}

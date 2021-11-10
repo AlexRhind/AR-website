@@ -1,0 +1,25 @@
+/*
+* _index processes all the partials in this folder, and allows
+* the folder's contents to be passed/forwarded to other partials
+* Sass 2.0 requires $var as local vars, not global
+
+* To import the contents of the base folder use a namespace or *
+* If appropriate (fear of var similarly named) use a letter, eg, b
+* @use "../base" as b; 
+* This would mean calling the folder would be b.card
+
+* @use "../base" as *;
+* Where * is everything. 
+* * means that no namespace (eg, b) is needed
+*/
+
+
+@forward "../modules/buttons";
+@forward "../modules/code";
+@forward "../modules/footer";
+@forward "../modules/forms";
+@forward "../modules/flexboxGrid";
+@forward "../modules/lists";
+@forward "../modules/media-queries";
+@forward "../modules/spacing";
+@forward "../modules/tables";

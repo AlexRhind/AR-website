@@ -1,0 +1,13 @@
+.parcel-cache
+
+src/img/
+
+dist/
+
+ReadMe
+
+node_modules/
+
+src/oldMasters/
+
+.DS_Store

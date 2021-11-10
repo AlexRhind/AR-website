@@ -1,0 +1,48 @@
+@use "../base" as *;
+
+//_footer.scss
+
+footer {
+    background-color: $navy;
+    padding: 2rem 0;
+}
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+footer p {
+    color: white;
+    //font-weight: 400;
+}
+
+footer .col-2.address {
+    border-left: 1px solid white;
+    align-self: stretch;
+    padding: 0 0 0 30px;
+    & img {
+        margin: 1.2rem 0 0.5rem 0;
+        width: 150px;  
+    }
+}
+
+footer .col-2.smallprint {
+    border-left: 1px solid white;
+    padding: 0 0 0 30px; 
+    align-self: stretch;   
+}
+
+footer .col-1.roundel {//139 Roundel
+    align-self: stretch;
+    align-items: center;
+}
+
+div.col-1.roundel div #whiteRoundel{
+    align-self: center;
+    //margin-top: 1.5rem;
+}

@@ -1,0 +1,52 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+
+
+@use "sass:math";
+
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colours
+$light-grey: #d8d8d8 !default;
+$mid-grey: #7e7e7e !default;
+$dark-grey: #333333 !default;
+
+$navy: #1c2f50 !default;
+$turq: #75b3bf !default;
+$sand: #bfba7e !default;
+$terra: #ab8400 !default;
+
+$primary-color: #1c2f50 !default;
+$secondary-color: #75b3bf !default; //turq
+
+$border-color: #1c2f50 !default;//primary colour
+$link-color: #75b3bf !default;//turq
+$font-color: #333333 !default; //dark grey
+
+$white20pc: rgb(255,255,255,0.2);
+$white50pc: rgb(255,255,255,0.5);
+$white80pc: rgb(255,255,255,0.8);
+
+$black20pc: rgba(0, 0, 0, 0.2);
+$black50pc: rgba(0, 0, 0, 0.5);
+$black80pc: rgba(0, 0, 0, 0.8);
+
+// Typography
+$font-family: "Roboto Slab", serif;
+
+//Grid Variables
+$container-width: 3000px !default; //960px org default
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: math.div(100, $total-columns) !default; // calculates individual column width based off of # of columns
+$column-margin: 3% !default; // space between columns
+
+// Misc
+$global-radius: 0px !default;

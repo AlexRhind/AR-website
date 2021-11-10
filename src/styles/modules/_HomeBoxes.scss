@@ -1,0 +1,58 @@
+@use "../base" as *;
+
+//_139Boxes.scss
+
+section {
+    padding: 4rem 0;
+    //height: 120 vh;
+}
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+section p {
+    color: white;
+}
+
+section h4 {
+    color: $navy;
+    font-weight: 300;
+
+}
+
+section .number img.figure{
+    opacity: 0.5;
+    height: 100px;
+    //border: 1px solid red;
+}
+
+section .turq {
+    background-color: $turq;
+    padding: 20px;
+    width: 31.3%;
+    margin-right: 3%;
+}
+section .sand {
+    background-color: $sand;
+    padding: 20px;
+    width: 31.3%;
+    margin-right: 3%;
+}
+
+section .terra {
+    background-color: $terra;
+    width: 31.3%;
+    padding: 20px;
+}
+
+section > div.boxcopy {
+    width: 50%;
+    border: 1px solid red;
+
+}

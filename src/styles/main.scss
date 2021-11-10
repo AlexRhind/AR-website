@@ -1,0 +1,30 @@
+/*
+* Skeleton V2.0.4
+* @import is now deprecated - @use instead
+* Make sure the compile order is right here */
+
+/* Base files. */
+@use "./base/base-styles";
+@use "./base/functions";
+@use "./base/normalize";
+@use "./base/typography";
+@use "./base/utils";
+@use "./base/variables";
+@use "./base/flexboxGrid";
+
+
+/* Modules */
+@use "./modules/buttons";
+@use "./modules/code";
+@use "./modules/forms";
+@use "./modules/footer";
+@use "./modules/lists";
+@use "./modules/media-queries";
+@use "./modules/nav";
+@use "./modules/slider-material-icons";
+@use "./modules/slider";
+@use "./modules/HomeBoxes";
+@use "./modules/spacing";
+@use "./modules/tables";
+
+
