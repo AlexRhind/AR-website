@@ -1,0 +1,66 @@
+@use "../base" as *;
+
+//_footer-grid.scss uses grid
+
+footer {
+    background-color: $navy;
+    padding: 2rem 0;
+}
+
+.grid-container {
+    border: 1px solid green;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto, 1fr;
+    column-gap: 2.5%;
+
+}
+
+footer p {
+    color: white;
+    size: 1rem;
+    //font-weight: 400;
+}
+
+
+footer .address {
+    border: 1px solid red;
+    grid-column: 8 / 10;
+    grid-row: 1;
+    padding: 0 0 0 30px;
+    & img {
+        margin: 1.2rem 0 0.5rem 0;
+        width: 100px; 
+    } 
+    
+}
+
+footer .emptycols {
+    border: 1px solid red;
+    grid-column: 1 / 8;
+    grid-row: 1; 
+}
+footer .address {
+    border: 1px solid red;
+    grid-column: 8 / 10;
+    grid-row: 1; 
+}
+
+footer .smallprint {
+    border: 1px solid red;
+    grid-column: 10 / 12;
+    grid-row: 1; 
+}
+
+footer .roundel {//139 Roundel
+    border: 1px solid red;
+    grid-column: 12 / 13;
+    grid-row: 1;
+
+}
+
+footer .roundel div #whiteRoundel{
+    margin-top: 0rem;
+}

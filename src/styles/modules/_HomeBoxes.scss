@@ -1,4 +1,7 @@
+@use "sass:math";
 @use "../base" as *;
+
+
 
 //_139Boxes.scss
 
@@ -7,21 +10,25 @@ section {
     //height: 120 vh;
 }
 
-.grid-container {
+
+//this page uses grid
+.grid-wrapper { 
     width: 90%;
     margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
+    //border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+
 }
 
 section p {
     color: white;
 }
 
-section h4 {
+section h5 {
     color: $navy;
+    margin-bottom: 0.5rem;;
     font-weight: 300;
 
 }
@@ -33,26 +40,33 @@ section .number img.figure{
 }
 
 section .turq {
+    grid-column: 1 / 2;
+    grid-row: 1;
     background-color: $turq;
     padding: 20px;
-    width: 31.3%;
-    margin-right: 3%;
 }
+
+
 section .sand {
+    grid-column: 2 / 3;
+    grid-row: 1;
     background-color: $sand;
     padding: 20px;
-    width: 31.3%;
-    margin-right: 3%;
 }
 
 section .terra {
+    grid-column: 3 / 4;
+    grid-row: 1;
     background-color: $terra;
-    width: 31.3%;
     padding: 20px;
 }
 
-section > div.boxcopy {
-    width: 50%;
-    border: 1px solid red;
+section div.boxCopy {
+    width: 60%;
+    margin-left: 40%;
+    //border: 1px solid red;
+}
 
+section {
+    //border: 1px solid red;
 }
