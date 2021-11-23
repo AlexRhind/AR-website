@@ -14,18 +14,26 @@
 
 <body>
 
-    <header>
-        <include src="./partials/nav.html"></include>
-    </header>
-
-     <!-- large format slider full screen width-->
-     <include src="./partials/slider.html"></include>
-
-     <include src="./partials/139boxes.html"></include>
-
-     <include src="./partials/footer.html"></include>
+    <!-- _site-vh-control.scss for footer-to-bottom -->
+    <div class="site-wrapper">
+        <nav>
+            <include src="./partials/nav.html"></include>
+        </nav>
 
 
+        <!-- insert all page content inside section -->
+        <section>
+            <!-- large format slider full screen width-->
+            <include src="./partials/slider.html"></include>
+
+            <include src="./partials/139boxes.html"></include>
+        </section>
+        
+
+        <footer>
+            <include src="./partials/footer.html"></include>
+        </footer>
+    </div>
 
 <!-- JS master-->
 <script src="http://code.jquery.com/jquery-latest.min.js" type="javascript"></script>

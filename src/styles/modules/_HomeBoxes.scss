@@ -2,24 +2,17 @@
 @use "../base" as *;
 
 
-
-//_139Boxes.scss
-
-section {
-    padding: 4rem 0;
-    //height: 120 vh;
-}
-
-
 //this page uses grid
+
+//139Boxes.html partial
+
 .grid-wrapper { 
     width: 90%;
-    margin: 0 auto;
+    margin: 4rem auto;
     //border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3%;
-
 }
 
 section p {
@@ -30,7 +23,6 @@ section h5 {
     color: $navy;
     margin-bottom: 0.5rem;;
     font-weight: 300;
-
 }
 
 section .number img.figure{
@@ -44,8 +36,8 @@ section .turq {
     grid-row: 1;
     background-color: $turq;
     padding: 20px;
+    min-width: 300px;
 }
-
 
 section .sand {
     grid-column: 2 / 3;
