@@ -1,0 +1,13 @@
+html, body {
+  /* height 100% or vh forces the footer to the bottom of the page */
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.site-wrapper {
+  /* min-height makes the wrapper fill the vh */
+  min-height: 100%;
+  display: grid;
+  /* auto is 'size appearing', and 1fr (section) here fills the remainder */
+  grid-auto-rows: auto 1fr auto;
+}
