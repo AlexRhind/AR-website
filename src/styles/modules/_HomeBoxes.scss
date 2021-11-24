@@ -9,7 +9,6 @@
 .grid-wrapper { 
     width: 90%;
     margin: 4rem auto;
-    //border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3%;
@@ -25,38 +24,45 @@ section h5 {
     font-weight: 300;
 }
 
-section .number img.figure{
-    opacity: 0.5;
-    height: 100px;
-    //border: 1px solid red;
-}
 
-section .turq {
+ .turq {
     grid-column: 1 / 2;
     grid-row: 1;
+    display: grid;
     background-color: $turq;
     padding: 20px;
-    min-width: 300px;
 }
 
-section .sand {
+ .sand {
     grid-column: 2 / 3;
     grid-row: 1;
+    display: grid;
     background-color: $sand;
     padding: 20px;
 }
 
-section .terra {
+ .terra {
     grid-column: 3 / 4;
     grid-row: 1;
+    display: grid;
     background-color: $terra;
     padding: 20px;
 }
 
-section div.boxCopy {
-    width: 60%;
-    margin-left: 40%;
-    //border: 1px solid red;
+ .number img.figure{
+    opacity: 0.5;
+    grid-row: 1;
+    height: 100px;
+    align-self: start;
+    // border: 1px solid red;
+}
+
+ div.boxCopy {
+    width: clamp(150px, 60%, 600px);
+    grid-row: 2;
+    align-self: start;
+    justify-self: end;
+    // border: 1px solid red;
 }
 
 section {
