@@ -2,68 +2,67 @@
 @use "buttons" as *;
 
 
-//left hand side
+//uses grid
 
-nav div.grid-container {
-    //border: 1px solid purple;
+nav .grid-wrapper {
+    // border: 1px solid purple;
+    width: 100%;
+    height: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2.5%;
+
+    grid-template-areas: 
+            "logo bar"
+            "logo navButtons";
 }
 
-nav .col-6 {
-    //border: 1px solid orange;
-    height: 85px;
-    position: relative;
-    
+nav .navLogo {
+    grid-area: logo;
+    align-self: center;
+    display: grid;
 }
 
-nav div.navLogo {
-    //border: 1px solid green;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 5%;
-}
-
-nav div.navLogo img{
-    //min-width: 180px;
+nav .navLogo img {
+    width: clamp(60px, 180px, 180px);
     display: block;
-    width: 70%;
-    max-width: 260px;
-}
-
-//right hand side 
-
-nav .navbar.col-6 {
-    position: relative;
-}
-
-nav div.navElements ul {
-    margin: 0;
+    margin: 1% 0 0 30px;
+    // display: block;
 }
 
 nav .navTopBar {
+    grid-area: bar;
+    height: 20px;
     background-color: $primary-color;
-    height: 30px;
+    // height: 30px;
+}
+
+nav .navElements ul {
+    grid-area: navButtons;
+    margin: 0;
 }
 
 nav li.navButton {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: $dark-grey;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 38px;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  //border: 1px solid green;
-  cursor: pointer;
-  box-sizing: border-box;
+    //   border: 1px solid green;
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: $dark-grey;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 38px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 nav li.navButton a {
-    color: $mid-grey;
+    color: $light-grey;
     font-weight: 300;
     text-decoration: none;
     &:hover {
@@ -71,11 +70,10 @@ nav li.navButton a {
     }
   }
 
-  nav a.current {
-    border-bottom: 4px solid $turq;
-    color: $dark-grey;
-    font-weight: 600;
-}
+//   nav li.navButton a.current {
+//     border-bottom: 4px solid $turq;
+//     color: $dark-grey;
+// }
 
 
 .navRoundel img{
