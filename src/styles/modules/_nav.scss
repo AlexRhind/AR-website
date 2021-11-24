@@ -36,7 +36,7 @@ nav .navTopBar {
     grid-area: bar;
     height: 20px;
     background-color: $primary-color;
-    // height: 30px;
+    // height: 30px ;
 }
 
 nav .navElements ul {
@@ -70,16 +70,19 @@ nav li.navButton a {
     }
   }
 
+  nav .roundel img{
+    width: 90px;
+    opacity: 0.9;
+    position: absolute;
+    top: 55px;
+    right: 2.7%;
+    z-index: 10;
+ }
+
+
+
+
 //   nav li.navButton a.current {
 //     border-bottom: 4px solid $turq;
 //     color: $dark-grey;
 // }
-
-
-.navRoundel img{
-   // width: 12rem;
-   // position: absolute;
-   // top: 0rem;
-   // right:5%;
-   display: none;
-}

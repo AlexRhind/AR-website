@@ -31,6 +31,10 @@ section .turq {
     display: grid;
     background-color: $turq;
     padding: 20px;
+
+    &  a:rollover {
+
+    }
 }
 
 section .sand {
@@ -65,6 +69,5 @@ section .boxCopy {
     // border: 1px solid red;
 }
 
-section {
-    //border: 1px solid red;
-}
+
+// http://jsfiddle.net/hbirjand/RG8wW/
