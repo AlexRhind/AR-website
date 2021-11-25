@@ -3,7 +3,6 @@
 
 
 //this page uses grid
-
 //139Boxes.html partial
 
 section .grid-wrapper { 
@@ -15,15 +14,17 @@ section .grid-wrapper {
 }
 
 section p {
-    color: white;
+    color: white; 
+    font-family: $primary-font; //Barlow
+    font-weight: 300;
+
 }
 
 section h5 {
-    color: $navy;
+    font-family: $secondary-font; //Bitter serif for headings
     margin-bottom: 0.5rem;;
     font-weight: 300;
 }
-
 
 section .turq {
     grid-column: 1 / 2;
@@ -31,10 +32,6 @@ section .turq {
     display: grid;
     background-color: $turq;
     padding: 20px;
-
-    &  a:rollover {
-
-    }
 }
 
 section .sand {

@@ -67,8 +67,16 @@ nav li.navButton a {
     text-decoration: none;
     &:hover {
       color: $dark-grey;
+      font-weight: 300;
     }
   }
+
+//   call the active page 
+  nav li a.active {
+    color: $dark-grey;
+    font-weight: 300;
+}
+
 
   nav .roundel img{
     width: 90px;
