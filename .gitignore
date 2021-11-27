@@ -4,8 +4,6 @@ src/img/**/*
 
 dist/
 
-ReadMeRefs/
-
 node_modules/
 
 src/oldMasters/**/*

@@ -16,17 +16,17 @@
 
 
 /* Modules */
+@use "./modules/nav";
+@use "./modules/footer-flex";
+@use "./modules/slider-material-icons";
+@use "./modules/slider";
 @use "./modules/buttons";
 @use "./modules/code";
 @use "./modules/forms";
-@use "./modules/footer-flex";
 @use "./modules/col6CopyBox";
-@use "./modules/simpleGallery";
 @use "./modules/lists";
 // @use "./modules/media-queries";
-@use "./modules/nav";
-@use "./modules/slider-material-icons";
-@use "./modules/slider";
+@use "./modules/simpleGallery";
 @use "./modules/HomeBoxes";
 @use "./modules/spacing";
 @use "./modules/tables";
