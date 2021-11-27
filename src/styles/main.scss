@@ -7,7 +7,9 @@
 @use "./base/base-styles";
 @use "./base/site-vh-control";
 @use "./base/normalize";
+@use "./base/mixins";
 @use "./base/typography";
+// @use "./base/typographyBase"; See old masters
 @use "./base/utils";
 @use "./base/variables";
 @use "./base/flexboxGrid";
@@ -19,8 +21,9 @@
 @use "./modules/forms";
 @use "./modules/footer-flex";
 @use "./modules/col6CopyBox";
+@use "./modules/simpleGallery";
 @use "./modules/lists";
-@use "./modules/media-queries";
+// @use "./modules/media-queries";
 @use "./modules/nav";
 @use "./modules/slider-material-icons";
 @use "./modules/slider";

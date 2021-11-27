@@ -7,16 +7,18 @@ section .col6-wrapper {
     // border: 1px solid green;
 }
 
-.col6 {
+section .col6 {
     // border: 1px solid red;
     margin: 0 auto;
-    width: 55%;
+    width: clamp(500px, 530px, 40%);
 }
 
-section h5 {
+section .col6 h5 {
     font-family: $secondary-font;
+    color: $navy;
     font-weight: 300;
     text-align: center;
+    margin: 0 8% 1 rem 0;
 }
 
 section .col6 p {

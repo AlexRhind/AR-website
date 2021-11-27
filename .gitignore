@@ -1,6 +1,6 @@
 .parcel-cache
 
-src/img/
+src/img/**/*
 
 dist/
 
@@ -8,6 +8,6 @@ ReadMeRefs/
 
 node_modules/
 
-src/oldMasters/
+src/oldMasters/**/*
 
 .DS_Store

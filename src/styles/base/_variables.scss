@@ -6,12 +6,6 @@
 
 @use "sass:math";
 
-$bp-larger-than-mobile    : "min-width: 400px" !default;
-$bp-larger-than-phablet   : "min-width: 550px" !default;
-$bp-larger-than-tablet    : "min-width: 750px" !default;
-$bp-larger-than-desktop   : "min-width: 1000px" !default;
-$bp-larger-than-desktophd : "min-width: 1200px" !default;
-
 // Colours
 $light-grey: #a3a2a2 !default;
 $mid-grey: #707070 !default;
@@ -41,7 +35,7 @@ $black80pc: rgba(0, 0, 0, 0.8);
 $primary-font: 'Barlow', sans-serif; //body, p via base-styles
 $secondary-font: 'Bitter', serif; //headings
 
-//Grid Variables
+// Grid Variables
 $container-width: 3000px !default; //960px org default
 $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;

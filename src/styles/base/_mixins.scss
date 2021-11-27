@@ -1,0 +1,69 @@
+/* Scss Document */
+
+
+// // For design-specific breakpoints. Sass now requires calc, hence this rather clumsy calc to allow for px
+// // parse break point value as an (integer)
+// @mixin break($breakPoint) {
+
+//    @media screen and (max-width: calc($breakPoint * 1px)) {
+//        @content;
+
+//    }
+// }
+
+
+
+// pass value with units eg, 200px
+@mixin breakUnits($breakPoint) {
+
+    @media screen and (max-width: $breakPoint) {
+        @content;
+ 
+    }
+ }
+
+// So 908px -
+
+// @include break(908) {
+//     @content
+// }
+
+
+
+
+// Small devices
+// Small tablets and large smartphones (landscape view) $screen-sm-max: 576px;
+@mixin sm {
+   @media (max-width: #{$screen-sm-max}) {
+       @content;
+   }
+}
+
+// Medium devices
+// Small tablets (portrait view) $screen-md-max: 768px;
+@mixin md {
+   @media (max-width: #{$screen-md-max}) {
+       @content;
+   }
+}
+
+// Large devices
+// Tablets and small desktops $screen-lg-max: 992px;
+@mixin lg {
+   @media (max-width: #{$screen-lg-max}) {
+       @content;
+   }
+}
+
+// Extra large devices
+// Large tablets and desktops $screen-xl-max: 1200px;
+@mixin xl {
+   @media (max-width: #{$screen-xl-max}) {
+       @content;
+   }
+}
+
+
+
+
+
