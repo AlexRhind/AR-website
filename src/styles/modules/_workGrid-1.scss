@@ -1,6 +1,7 @@
 
 
 // workGrid1 - Environmental. Uses grid
+
 // https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/
 
 // Also https://masonry.desandro.com/
@@ -19,59 +20,57 @@
     grid-template-areas: 
         "a a b c"
         "a a d e";
-}
 
-.gwrap-work-1 .a-item {
-    grid-area: a;
-    // border: 1px solid green;
-    background-color: lightgray;
+        & .a-item {
+            grid-area: a;
+            // border: 1px solid green;
+            background-color: lightgray;
 
-        // & img {
-        //     overflow: hidden;
-        // }
-}
-
-.gwrap-work-1 .b-item {
-    grid-area: b;
-    // border: 1px solid green;
-    background-color: $turq;    
-    display: grid;
-
-        & p {
-            padding: 0 1.5vh 1.0vh 1.5vh;
-            align-self: end;
-            color: white;
-        }
-}
-
-.gwrap-work-1 .c-item {
-    grid-area: c;
-    // border: 1px solid green;
-    background-color: $turq;
-    display: grid;
-
-        & img.figure {
-            padding-top: 1.5vh;
-            opacity: 0.5;//50% white
-            height: 130px;
-            align-self: start;
+                // & img {
+                //     overflow: hidden;
+                // }
         }
 
-}
+        & .b-item {
+            grid-area: b;
+            // border: 1px solid green;
+            background-color: $turq;    
+            display: grid;
 
-.gwrap-work-1 .d-item {
-    grid-area: d;
-    // border: 1px solid green;
-    background-color: $mid-grey;
-    // display: grid;
-    // align-self: end;
-}
+                & p {
+                    padding: 0 1.5vh 1.0vh 1.5vh;
+                    align-self: end;
+                    color: white;
+                }
+        }
+        & .c-item {
+            grid-area: c;
+            // border: 1px solid green;
+            background-color: $turq;
+            display: grid;
 
-.gwrap-work-1 .e-item {
-    grid-area: e;
-    // border: 1px solid green;
-    background-color: $light-grey;
-    //overflow:hidden;
-    // display: grid;
-    // align-self: end;
-}
+                & img.figure {
+                    padding-top: 1.5vh;
+                    opacity: 0.5;//50% white
+                    height: 130px;
+                    align-self: start;
+                }
+
+        }
+
+        & .d-item {
+            grid-area: d;
+            background-color: $mid-grey;
+            // display: grid;
+            // align-self: end;
+        }
+
+        & .e-item {
+            grid-area: e;
+            // border: 1px solid green;
+            background-color: $light-grey;
+            //overflow:hidden;
+            // display: grid;
+            // align-self: end;
+        }
+    }
