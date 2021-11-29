@@ -2,27 +2,31 @@
 
 //uses columns
 
-section .col2-wrapper {
-    margin: 4rem auto 6rem auto;
-    // border: 1px solid green;
-    width: 50%;
+article {
+    background-color: $turq;
 
-    & .columns2 {
-        // border: 1px solid red;
-        column-width: 48%;
-        column-count: 2;
-        column-gap: 4%;
+    .col2-wrapper {
+        margin: 4rem auto 6rem auto;
+        border: 1px solid green;
+        width: 50%;
 
-            & h4 {
-            font-family: $secondary-font;
-            color: $navy;
-            font-weight: 300;
-            text-align: center;
-            margin: 0 8% 2rem 0;
-        }
+        & .columns2 {
+            // border: 1px solid red;
+            column-width: 48%;
+            column-count: 2;
+            column-gap: 4%;
 
-            & p {
-            color: $dark-grey;
+                & h3 {
+                font-family: $secondary-font;
+                color: $navy;
+                font-weight: 300;
+                text-align: left;
+                margin: 0 8% 2rem 0;
+            }
+
+                & p {
+                color: white;
+            }
         }
     }
 }
