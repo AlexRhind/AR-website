@@ -4,8 +4,6 @@
 
 @use "../base" as *;
 
-//li.buttons for nav in nav.scss
-
 .button,
 button {
   display: inline-block;
@@ -16,8 +14,8 @@ button {
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
+  // letter-spacing: .1rem;
+  // text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -51,12 +49,12 @@ input {
   }
 }
 
-.button:hover,
-button:hover {
-  color: $dark-grey;
-  border-color: lighten($dark-grey, 33.3%);
-  outline: 0;
-}
+// .button:hover,
+// button:hover {
+//   color: $dark-grey;
+//   border-color: lighten($dark-grey, 33.3%);
+//   outline: 0;
+// }
 
 input {
   &[type="submit"]:hover,

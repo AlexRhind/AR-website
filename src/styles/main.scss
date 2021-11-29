@@ -16,16 +16,16 @@
 /* Modules */
 @use "./modules/nav";
 @use "./modules/footer-flex";
+@use "./modules/buttons";
+@use "./modules/forms";
 @use "./modules/slider-material-icons";
 @use "./modules/slider";
-@use "./modules/buttons";
-@use "./modules/workGrid-1";
-@use "./modules/forms";
-@use "./modules/copy40pc-1Col";
-@use "./modules/copy50pc-2Col";
 @use "./modules/lists";
 @use "./modules/simpleGallery";
 @use "./modules/grid3-139boxes";
 @use "./modules/tables";
 
+@use "./modules/portfolio/workGrid-1";
+@use "./modules/portfolio/copy40pc-1Col";
+@use "./modules/portfolio/enviro-copy50pc-2Col";
 

@@ -1,0 +1,75 @@
+@use "../../base" as *;
+
+
+section .copy40pc-wrapper {
+    margin: 5rem auto 4rem auto;
+    // border: 1px solid green;
+
+        .col2 {
+            // border: 1px solid red;
+            margin: 0 auto;
+            width: clamp(500px, 530px, 40%);
+        
+
+            h3 {
+                font-family: $secondary-font;
+                color: $navy;
+                font-weight: 300;
+                text-align: center;
+                margin: 0 8% 1rem 0;
+            }
+
+            p {
+                color: $dark-grey;
+        }
+    }
+}
+
+
+.workLinks {
+    // border: 1px solid red;
+    
+    ul {
+        text-align: center;
+        margin: 10% 3% 0 0;
+    }
+
+    //uses _button.scss
+    li.button {
+        display: inline-block;
+        height: 50px;
+        padding: 1rem 0 2rem 0;
+        color: $navy;
+        text-align: center;
+        font-size: 2.0rem; //h4ish
+        font-family: $secondary-font;
+        font-weight: 300;
+        line-height: 20px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &.enviro {
+            border-top: 4px solid $turq;
+            margin-right: 30px;
+                &:hover{
+                border-color: darken($turq, 15%);    
+                }
+            }
+        &.social {
+            border-top: 4px solid $sand;
+            margin-right: 30px;
+                &:hover{
+                border-color: darken($sand, 15%);    
+                }
+            }
+        &.infographics {
+            border-top: 4px solid $terra;
+                &:hover{
+                border-color: darken($terra, 10%);    
+                }
+        }
+
+    }
+}

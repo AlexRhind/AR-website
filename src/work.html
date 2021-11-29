@@ -11,8 +11,6 @@
         </style>
 </head>
 
-<!-- This page is the intro to the work pages enviro/infographics/social -->
-
 <body>
 
     <!-- _site-vh-control.scss for footer-to-bottom -->
@@ -28,9 +26,13 @@
 
             <include src="./partials/copy40pc-1Col.html"></include>
 
-            <include src="./partials/workGrid-1.html"></include>
+            <include src="./partials/enviro-workGrid.html"></include>
 
-            <include src="./partials/Copy50pc-2Col.html"></include>
+            <include src="./partials/enviro-copy50pc-2Col.html"></include>
+            
+            <include src="./partials/slider.html"></include>
+
+            <include src="./partials/social-workGrid.html"></include>
 
             
         </section>
@@ -51,7 +53,7 @@
                 $('#slider').rbtSlider({
                     height: '30vh',
                     'dots': true,
-                    'arrows': false,
+                    'arrows': true,
                     'auto': 3
                 });
             });
