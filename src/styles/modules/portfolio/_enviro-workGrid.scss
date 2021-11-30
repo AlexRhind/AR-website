@@ -11,14 +11,15 @@
 .gwrap-work-1  {
     // border: 1px solid green;
     width: 100%;
-    min-height: 40vh;
+    height: 40vh;
+    // height: clamp(200px, 250px, 300px);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);  
     grid-template-rows: 1fr 1fr;
 
     grid-template-areas: 
-        "a a b b"
+        "a a b c"
         "a a d e";
 
         & .a-item {
@@ -43,20 +44,11 @@
                     color: white;
                 }
         }
-        // & .c-item {
-        //     grid-area: c;
-        //     // border: 1px solid green;
-        //     background-color: $turq;
-        //     display: grid;
-
-        //         & img.figure {
-        //             padding-top: 1.5vh;
-        //             opacity: 0.5;//50% white
-        //             height: 130px;
-        //             align-self: start;
-        //         }
-
-        // }
+        & .c-item {
+            grid-area: c;
+            // border: 1px solid green;
+            background-color: $navy;
+        }
 
         & .d-item {
             grid-area: d;

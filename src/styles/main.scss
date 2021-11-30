@@ -16,6 +16,7 @@
 /* Modules */
 @use "./modules/nav";
 @use "./modules/footer-flex";
+
 @use "./modules/buttons";
 @use "./modules/forms";
 @use "./modules/slider-material-icons";
@@ -25,7 +26,13 @@
 @use "./modules/grid3-139boxes";
 @use "./modules/tables";
 
-@use "./modules/portfolio/workGrid-1";
 @use "./modules/portfolio/copy40pc-1Col";
+@use "./modules/portfolio/enviro-workGrid";
 @use "./modules/portfolio/enviro-copy50pc-2Col";
+// @use "./modules/portfolio/enviroSocialSlider";
+@use "./modules/portfolio/social-workGrid";
+@use "./modules/portfolio/social-copy50pc-2Col";
+// @use "./modules/portfolio/infogSlider";
+// @use "./modules/portfolio/simpleGallery";
+@use "./modules/portfolio/infog-copy50pc-2Col";
 

@@ -2,13 +2,14 @@
 
 //uses grid and columns
 
-section.turqBgrd {
+section.terraBgrd {
 
     // Grid container
-    background-color: $turq;
+    background-color: $terra;
 
     width: 100%;
-    min-height: 30vh;
+    height: 30vh;
+    // height: clamp(200px, 250px, 300px);
 
     display: grid;
     gap: 0;
@@ -19,7 +20,7 @@ section.turqBgrd {
         "a b b c"
 }
 
-.numberEnviro {
+.numberInfog {
     grid-area: a;
     padding: 1rem;
     display: grid;
@@ -37,7 +38,7 @@ section.turqBgrd {
 div.col2-wrapper {
     grid-area: b;
     // border: 1px solid green;
-    margin: 4rem auto 6rem auto;
+    margin: 2rem auto 0 auto;
     width: 100%;
     
     // columns 
@@ -60,7 +61,7 @@ div.col2-wrapper {
     }
 }
 
-.emptyEnviro {
+.emptyInfog {
     grid-area: c;
 
 }
