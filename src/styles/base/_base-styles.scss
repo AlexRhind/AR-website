@@ -6,33 +6,33 @@
 
 @use "../base/variables" as *;
 
-html {
-  font-size: 62.5%;
-}
+// html {
+//   font-size: 62.5%;
+// }
 
-body {
-  font-size: 1.5rem; 
-  font-weight: 300;
-  font-family: $primary-font;
-  color: $font-color;
-}
+// body {
+//   font-size: 1.5rem; 
+//   font-weight: 300;
+//   font-family: $primary-font;
+//   color: $font-color;
+// }
 
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-a {
-  color: $link-color;
-  &:hover {
-    color: darken($link-color, 5%);
-  }
-}
+// a {
+//   color: $link-color;
+//   &:hover {
+//     color: darken($link-color, 5%);
+//   }
+// }
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid $light-grey;
-}
+// hr {
+//   margin-top: 3rem;
+//   margin-bottom: 3.5rem;
+//   border-width: 0;
+//   border-top: 1px solid $light-grey;
+// }
