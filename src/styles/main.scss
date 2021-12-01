@@ -8,8 +8,8 @@
 @use "./base/site-vh-control";
 @use "./base/normalize";
 @use "./base/mixins";
-@use "./base/typography";//use Typography Base when design settles
-// @use "./base/typographyBase"; See old masters
+//@use "./base/typography"; //See old masters
+@use "./base/typographyBase";
 @use "./base/variables";
 
 
