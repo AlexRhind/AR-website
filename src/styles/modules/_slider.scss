@@ -65,12 +65,13 @@
 }
 
 
-h3.sliderTitle {
-
+h1.sliderTitle {
+    color: white;
     font-family: $secondary-font;
     font-weight: 200;
     text-shadow: 1px 1px 3px $black20pc ;
-    margin: 30px  0px  0px  0px;
+    text-align: left;
+    margin: 1rem  0px  0px  0px;
 
 }
 
