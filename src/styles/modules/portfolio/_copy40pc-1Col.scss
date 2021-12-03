@@ -1,25 +1,31 @@
 @use "../../base" as *;
 
+// .flexi{
+//     height: clamp(5px, 10px, 8%);
+//     background-color: purple;
+// }
+
 
 section .copy40pc-wrapper {
     margin: 5rem auto 2rem auto;
     // border: 1px solid green;
+}
 
-        .col2 {
-            // border: 1px solid red;
-            margin: 0 auto;
-            width: clamp(500px, 530px, 40%);
-        
+    .col1 {
+        // border: 1px solid red;
+        margin: 0 auto;
+        width: clamp(500px, 530px, 40%);
 
-            h1 { 
-                margin: 0 8% 1rem 0;
-            }
+        h1 { 
+            margin: 0 8% 1rem 0;
+            text-align: center;
+        }
 
-            p {
-                color: $dark-grey;
+        p {
+            color: $dark-grey;
         }
     }
-}
+
 
 
 .workLinks {

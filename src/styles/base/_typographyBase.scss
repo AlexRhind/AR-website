@@ -28,10 +28,12 @@ li, ul {
 	text-decoration: none;
 }
 
-label {
-	font-size: 1rem;
-	margin: 0.3rem 0 0.3rem 10px; //10px left indent for labels
-}
+// Label as p
+
+// label {
+// 	font-size: 0.9rem;
+// 	margin: 0.15rem 0 0 0; //10px left indent for labels
+// }
 
 
 //this sets the default lineheight at 1.7. Enter an optional 5th value if it needs changed
@@ -44,7 +46,7 @@ label {
 	//letter-spacing: -0.1px;
 	//word-spacing: 0.02em;
 	line-height: $lineHeight; //set 1.7
-	color: $dark-grey;
+	color: $dark-grey !important;
 	text-align: left;
 	margin-top: $m-top;
 	margin-right: $m-right;
@@ -55,12 +57,23 @@ label {
 p { @include p(0, 0, 0.75rem, 0)
 		}
 	
-p.white { @include p(0, 0, 0, 0);
+p.white { @include p(0, 0, 0.75rem, 0);
 		color: white !important;
-		// font-size: 0.7rem;
-
 		}
-	
+
+// Footer smallprint
+p.smallbody, .address-copy p, .smallprint-copy p { 
+	@include p(0, 0, 0.4rem, 0, 1.5);//1.5 line-height
+
+	font-size: 0.8rem;
+	color: white !important;
+	}
+
+label { @include p(0.5rem, 0, 0, 0)
+}
+
+
+
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
@@ -73,7 +86,7 @@ p.white { @include p(0, 0, 0, 0);
 	//word-spacing: 0.02em;
 	line-height: $lineHeight; //set 1.3
 	color: $navy;
-	text-align: center;
+	text-align: left;
 	margin-top: $m-top;
 	margin-right: $m-right;
 	margin-bottom: $m-bottom;
@@ -87,15 +100,13 @@ h1 {
 
 .h1{
 	@include h1(0, 0, 0, 0, 1.8);
-	color: $navy;
 }
 
-// .mainTemp{
-// 	@include h1(-0.5rem, 0, 0, 0, 1);
-// 	font-size: 2.2rem;
-// 	color: $navy;
-// }
-
+// Contact Form
+.copyBlock h1{
+	@include h1(0, 0, 1rem, 0, 1.8);
+	margin-top: 2rem;
+}
 
 
 
@@ -123,6 +134,11 @@ h2 {
 	@include h2(0, 0, 10px, 0, 1.6)
 }
 
+//139 boxes index
+.boxCopy h2 {
+	@include h2(0, 0, 0.3rem, 0)
+}
+
 
 
 
@@ -143,18 +159,14 @@ h2 {
 }
 
 h3 {
-	@include h3(0, 0, 0, 0)
+	@include h3(0, 0, 0.5rem, 0)
 }
 
 
 h3.standfirst {
-	@include h3(0, 0, 0.0rem, 0, 1.70);
+	@include h3(0, 0, 0.75rem, 0, 1.70);
+	color: $navy;
 	text-align: left;
-}
-
-h3.footer {
-	@include h3(20px, 0, 0.5rem, 0);
-	color: white;
 }
 
 

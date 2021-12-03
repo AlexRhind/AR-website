@@ -20,11 +20,10 @@ section.turqBgrd, section.sandBgrd, section.terraBgrd {
 
 .col2-wrapper {
     grid-area: b;
-    // border: 1px solid green;
+    //border: 1px solid green;
     margin: 2rem auto 1rem auto;
 
     & h1 {
-        text-align: left;
         margin-bottom: 1.0rem;
     }
     
@@ -34,17 +33,6 @@ section.turqBgrd, section.sandBgrd, section.terraBgrd {
         column-width: 48%;
         column-count: 2;
         column-gap: 4%;
-
-        //     & h3 {
-        //     font-family: $secondary-font;
-        //     color: $navy;
-        //     font-weight: 300;
-        //     text-align: left;
-        //     margin: 0 8% 2rem 0;
-        // }
-        //     & p {
-        //     color: white;
-        // }
     }
 }
 
@@ -61,13 +49,11 @@ section.turqBgrd{
 
         & img.figure{
         opacity: 0.18;
-        max-height: 85%;
+        max-height: 80%;
         align-self: end;
-        // border: 1px solid red;
+        //border: 1px solid red;
     }
 }
-    
-
 
     .emptyEnviro {
         grid-area: c;
