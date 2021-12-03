@@ -2,13 +2,11 @@
 
 //uses grid and columns
 
-section.turqBgrd {
+section.turqBgrd, section.sandBgrd, section.terraBgrd {
 
     // Grid container
-    background-color: $turq;
-
     width: 100%;
-    height: 40vh;
+    min-height: 30vh;
     // height: clamp(200px, 250px, 300px);
 
     display: grid;
@@ -17,29 +15,18 @@ section.turqBgrd {
     grid-template-rows: 1fr;
 
     grid-template-areas: 
-        "a b b c"
+        "a b b c";
 }
 
-.numberEnviro {
-    grid-area: a;
-    padding: 1rem;
-    display: grid;
-
-        & img{
-        opacity: 0.18;
-        max-height: 85%;
-        align-self: end;
-        // border: 1px solid red;
-        }
-}
-
-
-
-div.col2-wrapper {
+.col2-wrapper {
     grid-area: b;
     // border: 1px solid green;
-    margin: 2rem auto 0 auto;
-    width: 100%;
+    margin: 2rem auto 1rem auto;
+
+    & h1 {
+        text-align: left;
+        margin-bottom: 1.0rem;
+    }
     
     // columns 
     & .columns2 {
@@ -61,10 +48,32 @@ div.col2-wrapper {
     }
 }
 
-.emptyEnviro {
-    grid-area: c;
+// Control for enviro grid
 
+section.turqBgrd{
+        background-color: $turq;
+    }
+
+.numberEnviro {
+    grid-area: a;
+    padding: 1rem;
+    display: grid;
+
+        & img.figure{
+        opacity: 0.18;
+        max-height: 85%;
+        align-self: end;
+        // border: 1px solid red;
+    }
 }
+    
+
+
+    .emptyEnviro {
+        grid-area: c;
+    }
+
+
 
 
 

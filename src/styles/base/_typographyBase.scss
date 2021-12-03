@@ -12,7 +12,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: $primary-font; ///Google FONT - Barlow 300 regular, 300i reg italic 700 bold, 900 black
+	font-family: $primary-font; //Barlow sans
 	
 	widows: inherit;/*kern and ligature set*/
 	//hanging-punctuation: none || [ first || [ force-end | allow-end ] || last ];
@@ -128,8 +128,8 @@ h2 {
 
 @mixin h3($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 2) {
 	font-family: $secondary-font;
-	font-size: 1.1rem;
-	font-weight: 500;
+	font-size: 0.9rem;
+	font-weight: 400;
 	//font-variant: lining-nums|tabular-nums|proportional-nums;
 	//letter-spacing: -0.1px;
 	//word-spacing: 0.02em;
@@ -146,13 +146,10 @@ h3 {
 	@include h3(0, 0, 0, 0)
 }
 
-.card-title.activator.h3, .card-title.h3 {
-	@include h3(0, 0, 0.75rem, 0, 1.5rem);
-}
 
-h3.weather {
-	@include h3(0, 0, 0.9rem, 0, 1);
-	text-align: center;
+h3.standfirst {
+	@include h3(0, 0, 0.0rem, 0, 1.70);
+	text-align: left;
 }
 
 h3.footer {

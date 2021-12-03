@@ -1,53 +1,15 @@
 @use "../../base" as *;
 
 //uses grid and columns
+//See Enviro for grid control
 
-section.sandBgrd {
-
-    // Grid container
+section.sandBgrd{
     background-color: $sand;
-
-    width: 100%;
-    height: 30vh;
-    // height: clamp(200px, 250px, 300px);
-
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(4, 1fr);  
-    grid-template-rows: 1fr;
-
-    grid-template-areas: 
-        "a b b c"
 }
 
-div.socialEmpty {
+
+.socialEmpty {
     grid-area: a;
-}
-
-div.col2-wrapper {
-    grid-area: b;
-    border: 1px solid green;
-    margin: 2rem auto 0 auto;
-    width: 100%;
-    
-    // columns 
-    & .columns2 {
-        // border: 1px solid red;
-        column-width: 48%;
-        column-count: 2;
-        column-gap: 4%;
-
-            & h3 {
-            font-family: $secondary-font;
-            color: $navy;
-            font-weight: 300;
-            text-align: left;
-            margin: 0 8% 2rem 0;
-        }
-            & p {
-            color: white;
-        }
-    }
 }
 
 .numberSocial {
@@ -63,6 +25,7 @@ div.col2-wrapper {
         // border: 1px solid red;
     }
 }
+
 
 
 

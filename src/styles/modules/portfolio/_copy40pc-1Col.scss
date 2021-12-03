@@ -2,7 +2,7 @@
 
 
 section .copy40pc-wrapper {
-    margin: 5rem auto 4rem auto;
+    margin: 5rem auto 2rem auto;
     // border: 1px solid green;
 
         .col2 {
@@ -27,14 +27,14 @@ section .copy40pc-wrapper {
     
     ul {
         text-align: center;
-        margin: 10% 3% 0 0;
+        margin: 5% 3% 0 0;
     }
 
     //uses _button.scss
     li.button {
         display: inline-block;
         height: 50px;
-        padding: 1rem 0 2rem 0;
+        padding: 0.5rem 0 2rem 0;
         color: $navy;
         text-align: center;
         font-size: 1.3rem; //h2
