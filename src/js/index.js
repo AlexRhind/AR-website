@@ -5,3 +5,4 @@ import '../styles/main.scss';
 import './slider.js';
 import './nav-active.js';
 import './linkDivPages.js';
+import './backToTopButton.js';
