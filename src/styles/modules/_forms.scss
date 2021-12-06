@@ -10,19 +10,35 @@ input[type='text'],
 input[type='tel'],
 input[type='url'],
 input[type='password'],
-textarea,
-select {
-  height: 38px;
-  width: 100%;
-  max-width: 500px;
-  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
-  background-color: #fff;
-  border: 1px solid $light-grey;
-  border-radius: $global-radius;
-  box-shadow: none;
-  box-sizing: border-box;
-  margin: 5px 0;
+textarea, select {
+      display: inline-block;
+      height: 2rem;
+      width: 100%;
+      max-width: 600px;
+      padding: 0;
+      color: $light-grey;
+      border: none;
+      border-bottom: 1px solid $light-grey;
+      text-align: left;
+      font-size: 0.9rem;
+      font-family: $primary-font;
+      font-weight: 300;
+      line-height: 2rem;
+      text-transform: none;
+      text-decoration: none;
+      white-space: nowrap;
+      background-color: white;
+      box-shadow: none;
+      box-sizing: border-box;
+      border-radius: $global-radius;
+      cursor: pointer;
+
+      &:hover {
+            color: $dark-grey;
+            border-bottom: 1px solid $navy;
+    }
 }
+
 
 // Removes awkward default styles on some inputs for iOS
 input {
@@ -43,9 +59,17 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: 1px solid $light-grey;
+
+  // font-family: $primary-font;
+  // font-weight: 300;
+  // line-height: 2rem;
+
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-left: 1rem;
+  margin: 0.5rem 0 2.5rem 0;
 }
 
 input {
@@ -56,22 +80,22 @@ input {
   &[type="tel"]:focus,
   &[type="url"]:focus,
   &[type="password"]:focus {
-    border: 1px solid $primary-color;
+    // border: 1px solid $primary-color;
     outline: 0;
   }
 }
 
-textarea:focus,
+textarea:focus, textarea:hover,
 select:focus {
-  border: 1px solid $primary-color;
+  border: 1px solid $navy;
   outline: 0;
 }
 
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
-  font-weight: 300;
+  margin: 1.5rem 0 0 0;
+  font-weight: 400;
 }
 
 fieldset {

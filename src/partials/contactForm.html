@@ -11,7 +11,7 @@
 
 <div class="formBlock">
 
-    <h3>Suitable heading here</h3>
+    <h2 class="formBlockSub2">Suitable heading here</h2>
 	
     <!-- action="" method="post" -->
 <form>
@@ -19,17 +19,18 @@
     <label for="username">Name</label>
     <input type="text" name="username" required placeholder="Your name"/>
 
-    <label for="address">Address</label>
-    <input type="text" name="address" required placeholder="Address"/>
-    <input type="text" name="address" placeholder=""/>
+    <label for="address">Organisation</label>
+    <input type="text" name="organisation" placeholder="Organisation"/>
     
     <label for="tel">Telephone</label>
     <input type="tel" name="tel" placeholder="Telephone"/>
     
-    <label for="email">email</label>
+    <label for="email">Email</label>
     <input type="text" name="email" required placeholder="Your email"/><br>
     
-    <!-- <p><input type="textarea" name="comment" required placeholder="Your enquiry"/></p> -->
+    <label for="textarea">Your enquiry</label>
+    <textarea class="textarea" rows="10" cols="61%" name="textarea" required></textarea>
+    
     <input class="formButton" type="submit" name="submit" value="Send" />
 
 </form>

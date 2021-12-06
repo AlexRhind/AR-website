@@ -45,7 +45,7 @@ li, ul {
 	//text-transform: capitalise|uppercase|lowercase;
 	//letter-spacing: -0.1px;
 	//word-spacing: 0.02em;
-	line-height: $lineHeight; //set 1.7
+	line-height: 1.8rem; //set 1.7
 	color: $dark-grey !important;
 	text-align: left;
 	margin-top: $m-top;
@@ -63,8 +63,9 @@ p.white { @include p(0, 0, 0.75rem, 0);
 
 // Footer smallprint
 p.smallbody, .address-copy p, .smallprint-copy p { 
-	@include p(0, 0, 0.4rem, 0, 1.5);//1.5 line-height
+	@include p(0, 0, 0.6rem, 0);
 
+	line-height: 1.2rem; //set 1.7
 	font-size: 0.8rem;
 	color: white !important;
 	}
@@ -139,6 +140,9 @@ h2 {
 	@include h2(0, 0, 0.3rem, 0)
 }
 
+h2.formBlockSub2 {
+	@include h2(2rem, 0, 0, 0)
+}
 
 
 
