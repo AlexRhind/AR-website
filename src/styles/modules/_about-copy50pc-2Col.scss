@@ -1,0 +1,33 @@
+@use "../base" as *;
+
+//uses grid and columns
+
+.whiteBgrd{
+    background-color: white;
+}
+
+
+.whiteEmpty {
+    grid-area: a;
+}
+
+.RhinoImg {
+    grid-area: c;
+    padding: 1rem;
+    display: grid;
+
+    & img.figure{
+        opacity: 0.18;
+        max-height: 85%;
+        align-self: end;
+        justify-self: end;
+        // border: 1px solid red;
+    }
+}
+
+
+
+
+
+
+// width: clamp(500px, 530px, 40%);

@@ -1,0 +1,39 @@
+//uses grid and columns
+
+@use "../base" as *;
+
+
+section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBrgd {
+
+    // Grid container
+    border: dotted 4px orange;
+    width: 100%;
+    min-height: 30vh;
+    // height: clamp(200px, 250px, 300px);
+
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+        "a b b c";
+}
+
+.col2-wrapper {
+    grid-area: b;
+    border: 1px solid green;
+    margin: 2rem auto 1rem auto;
+
+    & h1 {
+        margin-bottom: 1.0rem;
+    }
+    
+    // columns 
+    & .columns2 {
+        // border: 1px solid red;
+        column-width: 48%;
+        column-count: 2;
+        column-gap: 4%;
+    }
+}
