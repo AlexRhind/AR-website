@@ -37,3 +37,19 @@ section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBgrd {
         column-gap: 4%;
     }
 }
+
+@include break(768px) {
+    .col2-wrapper {
+        grid-area: b;
+        margin: 2rem auto 1rem auto;
+    
+        & h1 {
+            margin-bottom: 1.0rem;
+        }
+        
+        // columns 
+        & .columns2 {
+            column-count: 1;
+        }
+    }
+    }

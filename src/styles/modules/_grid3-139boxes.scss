@@ -13,15 +13,6 @@ section .grid-wrapper {
     column-gap: 3%;
 }
 
-section p {
-    color: white; 
-}
-
-section h2 {
-    margin-bottom: 0.0rem;;
-    font-weight: 300;
-}
-
 section .turqLink {
     grid-column: 1 / 2;
     grid-row: 1;

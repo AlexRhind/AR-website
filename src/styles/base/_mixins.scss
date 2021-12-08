@@ -14,7 +14,7 @@
 
 
 // pass value with units eg, 200px
-@mixin breakUnits($breakPoint) {
+@mixin break($breakPoint) {
 
     @media screen and (max-width: $breakPoint) {
         @content;
@@ -24,7 +24,7 @@
 
 // So 908px -
 
-// @include break(908) {
+// @include break(908px) {
 //     @content
 // }
 
