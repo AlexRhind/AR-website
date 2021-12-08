@@ -3,10 +3,10 @@
 @use "../base" as *;
 
 
-section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBrgd {
+section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBgrd {
 
     // Grid container
-    border: dotted 4px orange;
+    // border: dotted 4px orange;
     width: 100%;
     min-height: 30vh;
     // height: clamp(200px, 250px, 300px);
@@ -22,7 +22,7 @@ section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBrgd {
 
 .col2-wrapper {
     grid-area: b;
-    border: 1px solid green;
+    // border: 1px solid green;
     margin: 2rem auto 1rem auto;
 
     & h1 {

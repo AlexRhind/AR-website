@@ -1,8 +1,9 @@
 @use "../base" as *;
 
 //uses grid and columns
+// aboutPorfolio-grids for grid layout
 
-.whiteBgrd{
+section.whiteBgrd{
     background-color: white;
 }
 
@@ -11,14 +12,13 @@
     grid-area: a;
 }
 
-.RhinoImg {
+.rhinoImg {
     grid-area: c;
     padding: 1rem;
     display: grid;
 
-    & img.figure{
-        opacity: 0.18;
-        max-height: 85%;
+    & img.rhinoPic{
+        max-width: 60%;
         align-self: end;
         justify-self: end;
         // border: 1px solid red;

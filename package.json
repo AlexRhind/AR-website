@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -13,7 +14,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.0",
+    "parcel": "^2.0.1",
     "posthtml-include": "^1.7.1"
   },
   "dependencies": {
