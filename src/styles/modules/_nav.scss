@@ -2,7 +2,9 @@
 @use "buttons" as *;
 
 
-//uses grid
+// Both mobile and desktop use grid
+
+// Desktop menu
 
 nav .grid-wrapper {
     // border-bottom: 1px solid lightgray;
@@ -19,6 +21,7 @@ nav .grid-wrapper {
             "logo navButtons";
 }
 
+// Logo in menu
 nav .navLogo {
     grid-area: logo;
     align-self: center;
@@ -40,6 +43,8 @@ nav .navLogo img.white139 {
     display: none;
 }
 
+
+// nav buttons in menu
 
 nav .navTopBar {
     grid-area: bar;
@@ -88,6 +93,9 @@ nav li.navButton {
 }
 
 
+
+// Roundel on desktop
+
   nav .roundel img{
     width: 90px;
     opacity: 0.9;
@@ -96,4 +104,13 @@ nav li.navButton {
     right: 2.7%;
     z-index: 10;
  }
+
+
+//  Hide roundel at 709px
+ @include break(709px) {
+
+  nav .roundel img{
+    display: none;
+  }
+}
 
