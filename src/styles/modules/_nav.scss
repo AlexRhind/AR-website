@@ -25,12 +25,21 @@ nav .navLogo {
     display: grid;
 }
 
-nav .navLogo img {
+nav .navLogo img.navy139 {
     width: clamp(60px, 180px, 180px);
     display: block;
     margin: 1% 0 0 30px;
-    // display: block;
+    // border: 1px solid red;
 }
+
+nav .navLogo img.white139 {
+    // width: clamp(60px, 180px, 180px);
+    // display: block;
+    // margin: 1% 0 0 30px;
+    // border: 1px solid red;
+    display: none;
+}
+
 
 nav .navTopBar {
     grid-area: bar;
