@@ -8,6 +8,7 @@
 
 nav .grid-wrapper {
     // border-bottom: 1px solid lightgray;
+    overflow: hidden;
     width: 100%;
     height: 70px;
 
@@ -21,7 +22,7 @@ nav .grid-wrapper {
             "logo navButtons";
 }
 
-// Logo in menu
+// Logo in desktop menu
 nav .navLogo {
     grid-area: logo;
     align-self: center;
@@ -44,48 +45,53 @@ nav .navLogo img.white139 {
 }
 
 
-// nav buttons in menu
+// nav buttons in desktop menu
 
-nav .navTopBar {
-    grid-area: bar;
-    height: 20px;
-    background-color: $primary-color;
-    // height: 30px ;
-}
+nav {
 
-nav .navElements ul {
-    grid-area: navButtons;
-    margin: 0;
-}
+    .navTopBar {
+        grid-area: bar;
+        height: 20px;
+        background-color: $primary-color;
+        // height: 30px ;
+    }
 
-nav li.navButton {
-    //   border: 1px solid green;
-    display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: $dark-grey;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 38px;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    cursor: pointer;
-    box-sizing: border-box;
+    .navElements ul {
+        grid-area: navButtons;
+        margin: 0;
+    }
 
-    & a {
-        color: $light-grey;
+    li.navButton {
+        //   border: 1px solid green;
+        display: inline-block;
+        height: 38px;
+        padding: 0 30px;
+        color: $dark-grey;
+        text-align: center;
+        font-size: 15px;
         font-weight: 300;
+        line-height: 38px;
         text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        & a {
+            color: $light-grey;
+            font-weight: 300;
+            text-decoration: none;
 
         &:hover {
-          color: $dark-grey;
-          font-weight: 300;
+            color: $dark-grey;
+            font-weight: 300;
         }
-    }
-}
 
+      }
+
+    }
+    
+}
 
 
 
