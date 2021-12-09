@@ -84,15 +84,18 @@ nav li.navButton {
           font-weight: 300;
         }
     }
-  }
+}
+
+
+
+
+
 
 //   call the active page 
   nav li a.active {
     color: $dark-grey;
     font-weight: 300;
 }
-
-
 
 // Roundel on desktop
 
@@ -104,7 +107,6 @@ nav li.navButton {
     right: 2.7%;
     z-index: 10;
  }
-
 
 //  Hide roundel at 709px
  @include break(709px) {
