@@ -8,7 +8,9 @@
 
 nav .grid-wrapper {
     // border-bottom: 1px solid lightgray;
-    overflow: hidden;
+    // overflow: hidden;
+    // position: relative;
+
     width: 100%;
     height: 70px;
 
@@ -29,14 +31,14 @@ nav .navLogo {
     display: grid;
 }
 
-nav .navLogo img.navy139 {
+nav .navLogo a img.navy139 {
     width: clamp(60px, 180px, 180px);
     display: block;
     margin: 1% 0 0 30px;
     // border: 1px solid red;
 }
 
-nav .navLogo img.white139 {
+nav .navLogo a img.white139 {
     // width: clamp(60px, 180px, 180px);
     // display: block;
     // margin: 1% 0 0 30px;
@@ -53,7 +55,6 @@ nav {
         grid-area: bar;
         height: 20px;
         background-color: $primary-color;
-        // height: 30px ;
     }
 
     .navElements ul {
@@ -90,14 +91,11 @@ nav {
       }
 
     }
-    
+
 }
 
 
-
-
-
-//   call the active page 
+//  call the desktop active page 
   nav li a.active {
     color: $dark-grey;
     font-weight: 300;

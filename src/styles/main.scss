@@ -10,7 +10,6 @@
 @use "./base/mixins";
 @use "./base/typographyBase";
 @use "./base/variables";
-@use "./base/mobileMenu";
 
 
 /* Modules */
@@ -37,6 +36,8 @@
 // @use "./modules/portfolio/infogSlider";
 // @use "./modules/portfolio/simpleGallery";
 @use "./modules/portfolio/infog-copy50pc-2Col";
+
+@use "./modules/mobileNav";
 
 @use "./modules/contactForm";
 

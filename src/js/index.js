@@ -6,4 +6,4 @@ import './slider.js';
 import './nav-active.js';
 import './linkDivPages.js';
 import './backToTopButton.js';
-import './toggleMobileMenu.js';
+// import './toggleMobileMenu.js';

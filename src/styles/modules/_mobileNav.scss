@@ -1,43 +1,65 @@
+@use "../base" as *;
 
+//  Mobile styling starts 709px
+@include break(709px) {
 
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #siteLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
+        // Hide the desktop navTopBar div
+        nav .navTopBar {display: none}
+
+        // Swap to white logo on mobile
+        nav .navLogo a img.white139 {
+            width: clamp(60px, 180px, 180px);
+            display: block;
+            margin: 1% 0 0 30px;
+            // border: 1px solid green;
+        }
+        
+        nav .navLogo a img.navy139 {
+            display: none;
+            // border: 1px solid red;
+
+        }
+
+        // Nav wrapper 100% navy and style nav menu */
+        nav .grid-wrapper {
+            overflow: hidden;
+            background-color: $navy;
+            position: relative;
+        }
+        
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .grid-wrapper #siteLinks {
+            display: block;
+        }
+        
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        /* Style the hamburger menu */
+        .grid-wrapper a.icon {
+            background: $light-grey;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        // /* Style the active link (or home/logo) */
+        // .active {
+        //     background-color: #04AA6D;
+        //     color: white;
+        // }
+
+}
