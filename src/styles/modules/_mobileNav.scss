@@ -3,15 +3,18 @@
 //  Mobile styling starts 709px
 @include break(709px) {
 
+        // Kill off the nav wrapper grid for desktop
+        nav .grid-wrapper {display: block}
+
         // Hide the desktop navTopBar div
         nav .navTopBar {display: none}
 
-        // Swap to white logo on mobile
+        // Swap to white logo on mobile // clamp(60px, 180px, 180px);
         nav .navLogo a img.white139 {
-            width: clamp(60px, 180px, 180px);
+            width: 180px;
             display: block;
-            margin: 1% 0 0 30px;
-            // border: 1px solid green;
+            margin: 18px 0 0 30px;
+            // border: 1px solid purple;
         }
         
         nav .navLogo a img.navy139 {
@@ -22,37 +25,40 @@
 
         // Nav wrapper 100% navy and style nav menu */
         nav .grid-wrapper {
-            overflow: hidden;
+            display: block;
+            // flex-direction: row;
+            // overflow: hidden;
             background-color: $navy;
             position: relative;
         }
         
         /* Hide the links inside the navigation menu (except for logo/home) */
-        .grid-wrapper #siteLinks {
-            display: block;
+        // .grid-wrapper #siteLinks {
+        //     display: none;
+        // }
+
+        .grid-wrapper ul {
+            position: absolute;
+            left: 0;
+            top:70px;
+            width: 100%;
+            z-index: 100;
         }
         
         /* Style navigation menu links */
-        .topnav a {
-            color: white;
-            padding: 14px 16px;
+        .grid-wrapper .navElements li {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 0 !important;
             text-decoration: none;
+            border-bottom: 1px solid $black20pc;
             font-size: 17px;
             display: block;
+            width: 100%;
         }
-        
-        /* Style the hamburger menu */
-        .grid-wrapper a.icon {
-            background: $light-grey;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        
+
         /* Add a grey background color on mouse-over */
-        .topnav a:hover {
-            background-color: #ddd;
+        .grid-wrapper .navElements li:hover {
+            background-color:  rgba(219, 217, 217, 0.9);
             color: black;
         }
         
@@ -61,5 +67,22 @@
         //     background-color: #04AA6D;
         //     color: white;
         // }
-
+        
+        
+        
+        /* Style the hamburger menu  "\e90d"  */ 
+        .grid-wrapper a.icon::before {
+            font-family: Material Icons;
+            color: white;
+            cursor: pointer;
+            // padding: 5px;
+            // border: 1px solid green;
+            font-size: 26px;
+            content: "\e5d2";
+            font-display: block;
+            position: absolute;
+            right: 25px;
+            top: 17px;
+        }
+        
 }

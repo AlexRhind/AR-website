@@ -3,7 +3,6 @@
 
 // Breakpoints
 
-
 @use "sass:math";
 
 // Colours
@@ -35,13 +34,13 @@ $black80pc: rgba(0, 0, 0, 0.8);
 $primary-font: 'Barlow', sans-serif; //body, p via base-styles
 $secondary-font: 'Bitter', serif; //headings
 
-// Grid Variables
-$container-width: 3000px !default; //960px org default
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
-$total-columns: 12 !default;
-$column-width: math.div(100, $total-columns) !default; // calculates individual column width based off of # of columns
-$column-margin: 3% !default; // space between columns
+// // Grid Variables
+// $container-width: 3000px !default; //960px org default
+// $container-width-larger-than-mobile: 85% !default;
+// $container-width-larger-than-phablet: 80% !default;
+// $total-columns: 12 !default;
+// $column-width: math.div(100, $total-columns) !default; // calculates individual column width based off of # of columns
+// $column-margin: 3% !default; // space between columns
 
 // Misc
 $global-radius: 0px !default;
