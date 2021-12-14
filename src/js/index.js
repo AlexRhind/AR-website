@@ -7,3 +7,4 @@ import './nav-active.js';
 import './linkDivPages.js';
 import './backToTopButton.js';
 // import './toggleMobileMenu.js';
+import "./navToggle.js";

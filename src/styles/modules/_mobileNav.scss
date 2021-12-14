@@ -9,25 +9,22 @@
         // Hide the desktop navTopBar div
         nav .navTopBar {display: none}
 
-        // Swap to white logo on mobile // clamp(60px, 180px, 180px);
+        // Swap to white logo on mobile
         nav .navLogo a img.white139 {
             width: 180px;
             display: block;
-            margin: 18px 0 0 30px;
-            // border: 1px solid purple;
+            margin: 19px 0 0 30px;
         }
         
         nav .navLogo a img.navy139 {
             display: none;
-            // border: 1px solid red;
 
         }
 
-        // Nav wrapper 100% navy and style nav menu */
+        // Mobile nav wrapper $navy and style nav menu */
+        // Allow div contents to be positioned (pos:relative)
         nav .grid-wrapper {
             display: block;
-            // flex-direction: row;
-            // overflow: hidden;
             background-color: $navy;
             position: relative;
         }
@@ -37,7 +34,9 @@
         //     display: none;
         // }
 
+        // Position mobile menu to appear under nav wrapper | Z-index for index slider
         .grid-wrapper ul {
+            display: none;
             position: absolute;
             left: 0;
             top:70px;
@@ -45,7 +44,7 @@
             z-index: 100;
         }
         
-        /* Style navigation menu links */
+        /* Style nav menu elements (li) */
         .grid-wrapper .navElements li {
             background-color: rgba(255, 255, 255, 0.9);
             margin: 0 !important;
@@ -56,21 +55,14 @@
             width: 100%;
         }
 
-        /* Add a grey background color on mouse-over */
+        /* Add a grey background color on mouse-over li */
         .grid-wrapper .navElements li:hover {
             background-color:  rgba(219, 217, 217, 0.9);
-            color: black;
+            color: $dark-grey;
         }
+                
         
-        // /* Style the active link (or home/logo) */
-        // .active {
-        //     background-color: #04AA6D;
-        //     color: white;
-        // }
-        
-        
-        
-        /* Style the hamburger menu  "\e90d"  */ 
+        /* Spawn the hamburger menu  "\e5d2"  */ 
         .grid-wrapper a.icon::before {
             font-family: Material Icons;
             color: white;

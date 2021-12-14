@@ -1,3 +1,5 @@
+  //  Makes the button link the active page
+   
    $('nav li a').filter(function(){
        
     const curPage = document.URL;
