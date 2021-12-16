@@ -3,7 +3,8 @@
 //  Mobile styling starts 709px
 @include break(709px) {
 
-        // Kill off the nav wrapper grid for desktop
+        // Kill off the nav wrapper grid 
+        // for desktop by displaying as block
         nav .grid-wrapper {display: block}
 
         // Hide the desktop navTopBar div
@@ -36,7 +37,7 @@
 
         // Position mobile menu to appear under nav wrapper | Z-index for index slider
         .grid-wrapper ul {
-            display: none;
+            // display: none;
             position: absolute;
             left: 0;
             top:70px;
