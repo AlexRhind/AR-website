@@ -37,14 +37,14 @@ jQuery.fn.rbtSlider = function(opt){
             slider.append(
                 $('<div/>', {
                     class: 'ctrlPrev',
-                    html: '<i class="material-icons arrows">navigate_before</i>'
+                    html: '<i class="material-icons-round arrows">navigate_before</i>'
                 }).on('click', function(){
                     nav('prev');
                 })
             ).append(
                 $('<div/>', {
                     class: 'ctrlNext',
-                    html: '<i class="material-icons arrows">navigate_next</i>'
+                    html: '<i class="material-icons-round arrows">navigate_next</i>'
                 }).on('click', function(){
                     nav('next');
                 })
