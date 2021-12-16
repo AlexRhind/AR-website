@@ -31,9 +31,10 @@
         }
         
         /* Hide the links inside the navigation menu (except for logo/home) */
-        // .grid-wrapper #siteLinks {
-        //     display: none;
-        // }
+        .grid-wrapper #siteLinks {
+            display: none;
+            background-color: green;
+        }
 
         // Position mobile menu to appear under nav wrapper | Z-index for index slider
         .grid-wrapper ul {
@@ -63,19 +64,17 @@
         }
                 
         
-        /* Spawn the hamburger menu  "\e5d2"  */ 
-        .grid-wrapper a.icon::before {
-            font-family: Material Icons;
+        /* Style the icon  menu "\e5d2"  */ 
+        .grid-wrapper a.icon {
             color: white;
             cursor: pointer;
-            // padding: 5px;
+            padding: 5px;
             // border: 1px solid green;
-            font-size: 26px;
-            content: "\e5d2";
-            font-display: block;
+            font-size: 29px;
+            display: block;
             position: absolute;
             right: 25px;
-            top: 17px;
+            top: 11px;
         }
         
 }
