@@ -31,9 +31,8 @@
         }
         
         /* Hide the links inside the navigation menu (except for logo/home) */
-        .grid-wrapper #siteLinks {
+        #siteLinks {
             display: none;
-            background-color: green;
         }
 
         // Position mobile menu to appear under nav wrapper | Z-index for index slider

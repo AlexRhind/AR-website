@@ -23,48 +23,40 @@
 
 // document.onload = function(){
 
-            window.addEventListener("resize", function() {
+    window.addEventListener("resize", function() {
 
-                if (window.matchMedia("(min-width: 702px)").matches) {
-                    console.log("Screen width is at least 702px")
-                } else {
-                    console.log("Screen less than 702px")
+        var menu = document.getElementById('siteLinks');
+            // console.log("Line 29")
+
+    if (window.matchMedia("(min-width: 702px)").matches) {
+
+            // This is the desktop menu    
+            // Ensures the buttons are always visible on desktop
+            console.log("IF Screen width => 702px, then desktop");
+
+                if (menu.style.display == 'none') {
+                    menu.style.display = 'block';
+                }
+                else {
+                    menu.style.display = 'block';
+                }            
+
+    } else {
+            // This is the mobile menu
+            console.log(" ELSE The Screen is < 702px, so mobile")
+
+            document.getElementById("menuIcon").addEventListener("click", function() {
+
+                "use strict";
+
+                if (menu.style.display !== 'none') {
+                    menu.style.display = 'none';
+                }
+                else {
+                    menu.style.display = 'block';
                 }
             })
 
+    }
+})
 
-
-
-        document.getElementById("menuIcon").addEventListener("click", function() {
-
-            "use strict";
-            console.log("Line 41")
-
-            var icon = document.getElementById('siteLinks');
-
-            console.log(typeof 'siteLinks')
-
-            // if (icon.style.display !== 'none') {
-            if (icon.style.backgroundColor !== 'green') {
-                // icon.style.display = 'none';
-                icon.style.backgroundColor = 'red';
-            }
-            else {
-                icon.style.display = 'block';
-            }
-        })
-
-// end document.onload
-// };
-
-
-    //         $(".hidediv").click(function () {
-    //             $(".divdemo").hide("slow");
-    //            });
-    //     )
-   
-    //     $(".showdiv").click(function () {
-    //     $(".divdemo").show(2000);
-    //    });
-   
-    //   });
