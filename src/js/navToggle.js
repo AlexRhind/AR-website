@@ -1,62 +1,50 @@
 
 
-// $(document).ready(function () {
+// NavMenuOne - Mobile styling - MAX of 702px wide
+const mediaQueryOne = window.matchMedia('max-width: 702px')
 
-//     $('.icon').click(function () {
-//         console.log('one')
-//         $('#siteLinks').fadeToggle();
-//     });
-    
-//     });
+// NavMenuTwo - Desktop styling - MIN of 703px wide
+const mediaQueryTwo = window.matchMedia('min-width: 703px')
 
-    
 
-    // $(window).resize(function() {
+// Mobile menu 
+function NavMenuOne(e) {
 
-    //     if ($(window).resize == 710) {
-    //         console.log("Screen width is at least 710px")
+    if (e.matches) {
 
-    //     } else {
-    //         console.log("Screen less than 710px")
-    //     }
-    // })
+        console.log('MQOne Mobile max-width: 702px')
 
-// document.onload = function(){
+        // ensure mobile nav is hidden on loading the page
+        $('#siteLinks').css('display','none');
 
-    window.addEventListener("resize", function() {
+        $('#menuIcon').click(function () {
 
-        var menu = document.getElementById('siteLinks');
-            // console.log("Line 29")
+            $('#siteLinks').fadeToggle();
+        })
+    }
+}
 
-    if (window.matchMedia("(min-width: 702px)").matches) {
+// Desktop menu 
+function NavMenuTwo(e) {
 
-            // This is the desktop menu    
-            // Ensures the buttons are always visible on desktop
-            console.log("IF Screen width => 702px, then desktop");
+    if (e.matches) {
 
-                if (menu.style.display == 'none') {
-                    menu.style.display = 'block';
-                }
-                else {
-                    menu.style.display = 'block';
-                }            
+        console.log('MQTwo Desktop min-width: 703px')
 
-    } else {
-            // This is the mobile menu
-            console.log(" ELSE The Screen is < 702px, so mobile")
-
-            document.getElementById("menuIcon").addEventListener("click", function() {
-
-                "use strict";
-
-                if (menu.style.display !== 'none') {
-                    menu.style.display = 'none';
-                }
-                else {
-                    menu.style.display = 'block';
-                }
-            })
+        // ensure the desktop nav is shown on loading the page
+        $('#siteLinks').css('display','block');
 
     }
-})
+}
 
+
+// Initial check - fire the function and pass the variable
+NavMenuOne(mediaQueryOne)
+
+NavMenuTwo(mediaQueryTwo)
+
+
+// Register an on-change event listener for the mobile menu
+mediaQueryOne.addEventListener('change', NavMenuOne)
+
+mediaQueryTwo.addEventListener('change', NavMenuTwo)
