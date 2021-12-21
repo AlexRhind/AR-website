@@ -80,12 +80,27 @@ h1.sliderTitle {
 // material-icons class is provided by google fonts - see scss file 
 
 .ctrlNext {
-    right: 20px;
+    right: 10px;
 }
 
 .ctrlPrev {
-    left: 20px;
+    left: 10px;
 }
+
+
+// turn off the arrows at 600px
+@include break(600px) {
+
+    .ctrlNext {
+        display: none;
+    }
+    
+    .ctrlPrev {
+        display: none;
+    }
+
+}
+
 
 .arrows {
     color: $white50pc;

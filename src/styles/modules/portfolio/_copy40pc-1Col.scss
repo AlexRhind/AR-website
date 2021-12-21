@@ -75,3 +75,8 @@ section .copy40pc-wrapper {
 
     }
 }
+
+
+@include break(709px) {
+    // do something here
+}

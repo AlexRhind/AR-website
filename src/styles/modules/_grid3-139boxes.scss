@@ -57,5 +57,63 @@ section .boxCopy {
     // border: 1px solid red;
 }
 
+// Make 3 boxes 1 col 3 rows
+@include break(660px) {
 
-// http://jsfiddle.net/hbirjand/RG8wW/
+    section .grid-wrapper { 
+        width: 70%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 3%;
+    }
+    
+    section .turqLink {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        display: block;
+        display: grid;
+        background-color: $turq;
+        padding: 5px 15px 5px 5px;
+    }
+    
+    section .sandLink {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        display: block;
+        display: grid;
+        background-color: $sand;
+        padding: 5px 15px 5px 5px;
+    }
+    
+    section .terraLink {
+        grid-column: 1 / 2;
+        grid-row: 3;
+        display: block;
+        display: grid;
+        background-color: $terra;
+        padding: 5px 15px 5px 5px;
+        margin: 0 0 1rem 0;
+    }
+    
+    section .number img.figure{
+        opacity: 0.5;
+        grid-row: 1;
+        height: 100px;
+    
+        align-self: start;
+        // border: 1px solid red;
+    }
+    
+    section .boxCopy {
+        width: clamp(150px, 60%, 600px);
+        grid-row: 2;
+        align-self: start;
+        justify-self: end;
+        // border: 1px solid red;
+    }
+    
+
+
+}

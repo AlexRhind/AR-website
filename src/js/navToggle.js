@@ -15,7 +15,7 @@ function NavMenuOne(e) {
         console.log('MQOne Mobile max-width: 702px')
 
         // ensure mobile nav is hidden on loading the page
-        $('#siteLinks').css('display','none');
+        $('#siteLinks').css('display','none !important');
 
         $('#menuIcon').click(function () {
 
@@ -32,7 +32,7 @@ function NavMenuTwo(e) {
         console.log('MQTwo Desktop min-width: 703px')
 
         // ensure the desktop nav is shown on loading the page
-        $('#siteLinks').css('display','block');
+        $('#siteLinks').css('display','block !important');
 
     }
 }
