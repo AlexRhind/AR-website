@@ -1,21 +1,21 @@
 
 
-// NavMenuOne - Mobile styling - MAX of 702px wide
-const mediaQueryOne = window.matchMedia('max-width: 702px')
+// NavMenuMobile - Mobile styling - MAX of 702px wide
+const MediaQueryMobile = window.matchMedia('max-width: 702px')
 
-// NavMenuTwo - Desktop styling - MIN of 703px wide
-const mediaQueryTwo = window.matchMedia('min-width: 703px')
+// NavMenuDesktop - Desktop styling - MIN of 703px wide
+const MediaQueryDesktop = window.matchMedia('min-width: 703px')
 
 
 // Mobile menu 
-function NavMenuOne(e) {
+function NavMenuMobile(e) {
 
     if (e.matches) {
 
         console.log('MQOne Mobile max-width: 702px')
 
         // ensure mobile nav is hidden on loading the page
-        $('#siteLinks').css('display','none !important');
+        $('#siteLinks').css('display','none');
 
         $('#menuIcon').click(function () {
 
@@ -25,26 +25,26 @@ function NavMenuOne(e) {
 }
 
 // Desktop menu 
-function NavMenuTwo(e) {
+function NavMenuDesktop(e) {
 
     if (e.matches) {
 
         console.log('MQTwo Desktop min-width: 703px')
 
         // ensure the desktop nav is shown on loading the page
-        $('#siteLinks').css('display','block !important');
+        $('#siteLinks').css('display','block');
 
     }
 }
 
 
 // Initial check - fire the function and pass the variable
-NavMenuOne(mediaQueryOne)
+NavMenuMobile(MediaQueryMobile)
 
-NavMenuTwo(mediaQueryTwo)
+NavMenuDesktop(MediaQueryDesktop)
 
 
 // Register an on-change event listener for the mobile menu
-mediaQueryOne.addEventListener('change', NavMenuOne)
+MediaQueryMobile.addEventListener('change', NavMenuMobile)
 
-mediaQueryTwo.addEventListener('change', NavMenuTwo)
+MediaQueryDesktop.addEventListener('change', NavMenuDesktop)

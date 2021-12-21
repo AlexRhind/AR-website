@@ -5,28 +5,32 @@
 //     background-color: purple;
 // }
 
+// controls both copy40pc-1Col - About and Portfolio partials
+
 
 section .copy40pc-wrapper {
     margin: 5rem auto 2rem auto;
     // border: 1px solid green;
 }
 
-    .col1 {
-        // border: 1px solid red;
-        margin: 0 auto;
-        width: clamp(500px, 530px, 40%);
+.col1 {
+    // border: 1px solid red;
+    margin: 0 auto;
+    width: clamp(60%, 530px, 40%);
 
-        h1 { 
-            margin: 0 8% 1rem 0;
-            text-align: center;
-        }
-
-        p {
-            color: $dark-grey;
-        }
+    h1 { 
+        margin: 0 8% 1rem 0;
+        text-align: center;
     }
 
+    p {
+        color: $dark-grey;
+    }
+}
 
+@include break(623px) {
+//  do stuff
+}
 
 .workLinks {
     // border: 1px solid red;

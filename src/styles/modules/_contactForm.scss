@@ -19,4 +19,16 @@
  // border: 1px solid red;
 }
 
+@include break(480px) {
 
+    .copyBlock {
+        margin: 1.5em 12% 3rem 12%;
+    // border: 1px solid red;
+    }
+
+    .formBlock {
+    margin: 1.5rem 12% 5rem 12%;
+    // border: 1px solid red;
+    }
+
+}

@@ -1,4 +1,4 @@
-/* Uses flex for control, assuming 12 col grid for sizing */
+/* Uses flex for control*/
 
 @use "../base" as *;
 
@@ -39,4 +39,49 @@ footer {
   width: 55px;
   align-self: center;
   margin: auto 4% auto 20px;
+}
+
+@include break(630px) {
+
+      footer {
+        background-color: $navy;
+        padding: 2.0rem 0;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .address {
+        display: flex;
+        // border: 1px solid red;
+        border-left: 1px solid white;
+        padding: 0 0 0 20px;
+        margin-left: 15%;
+        width: 80%;
+      }
+      
+      .address-copy, .smallprint-copy {
+          align-self: center;
+      }
+      
+      .address img{
+        width: clamp(100px, 40%, 49%);
+        margin: 10px 0 0.2rem 0;
+      }
+      
+      .smallprint {
+        // border: 1px solid red;
+        display: flex;
+        border-left: 1px solid white;
+        padding: 0 20px 0 20px;
+        margin-left: 15%;
+        width: 80%;
+      }
+      
+      .roundel {
+        // border: 1px solid red;
+        // width: 55px;
+        // align-self: center;
+        // margin: auto 4% auto 20px;
+        display: none;
+      }
 }

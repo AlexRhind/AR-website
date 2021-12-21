@@ -7,3 +7,4 @@ import './nav-active.js';
 import './linkDivPages.js';
 import './backToTopButton.js';
 import './navToggle.js';
+import './sliderControl.js';
