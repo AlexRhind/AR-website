@@ -50,11 +50,13 @@ footer {
         flex-direction: column;
       }
       
+
+      // address block
       .address {
         display: flex;
         // border: 1px solid red;
         border-left: 1px solid white;
-        padding: 0 0 10px 20px;
+        padding: 0 0 10px 30px;
         margin-left: 15%;
         width: 80%;
       }
@@ -68,11 +70,13 @@ footer {
         margin: 10px 0 0.2rem 0;
       }
       
+
+      // smallprint block
       .smallprint {
         // border: 1px solid red;
         display: flex;
         border-left: 1px solid white;
-        padding: 0 20px 0 20px;
+        padding: 0 20px 0 30px;
         margin-left: 15%;
         width: 80%;
       }
