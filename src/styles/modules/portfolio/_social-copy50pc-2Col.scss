@@ -26,6 +26,21 @@ section.sandBgrd{
     }
 }
 
+@include break(660px) {
+
+    .numberSocial {
+        grid-column: 3/5;
+        padding: 1rem;
+        display: grid;
+    
+            & img.figure{
+            opacity: 0.14;
+            max-height: 70%;
+            align-self: end;
+            //border: 1px solid red;
+            }
+    }
+}
 
 
 

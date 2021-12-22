@@ -1,7 +1,15 @@
 @use "../../base" as *;
 
 
-//uses grid and columns
+// enviro-copy50pc-2col.html partial
+
+// section .copy40pc-wrapper {
+//     margin: 5rem auto 2rem auto;
+//     width: clamp(70%, 530px, 40%);
+//     max-width: 700px;
+
+// }
+
 
 section.turqBgrd{
         background-color: $turq;
@@ -20,14 +28,23 @@ section.turqBgrd{
     }
 }
 
-    .emptyEnviro {
-        grid-area: c;
+.emptyEnviro {
+    grid-area: c;
+}
+
+
+@include break(660px) {
+
+    .numberEnviro {
+        grid-column: 1/3;
+        padding: 1rem;
+        display: grid;
+    
+            & img.figure{
+            opacity: 0.14;
+            max-height: 70%;
+            align-self: end;
+            //border: 1px solid red;
+            }
     }
-
-
-
-
-
-
-
-// width: clamp(500px, 530px, 40%);
+}

@@ -2,8 +2,10 @@
 
 @use "../base" as *;
 
+// 2-col copy - about and pfolio
+// section.whiteBgrd is about. Remainder pfolio
 
-section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBgrd {
+section.whiteBgrd, section.turqBgrd, section.sandBgrd, section.terraBgrd  {
 
     // Grid container
     // border: dotted 4px orange;
@@ -46,3 +48,42 @@ section.turqBgrd, section.sandBgrd, section.terraBgrd, section.whiteBgrd {
             column-count: 1;
         }
 }
+
+// See each grid area for control of the bgrd number
+
+@include break(660px) {
+
+        section.whiteBgrd, section.turqBgrd, section.sandBgrd, section.terraBgrd  {
+
+            // Grid container
+            // border: dotted 4px orange;
+            width: 100%;
+            min-height: 30vh;
+            display: grid;
+            gap: 0;
+            grid-template-columns: repeat(4, 1fr);  
+            grid-template-rows: 1fr;
+        }
+
+        .col2-wrapper {
+            // column run over 100w to matches other copy
+            grid-column: 1/5;
+            // border: 1px solid green;
+            width: clamp(70%, 530px, 40%);
+            max-width: 700px;
+            margin: 2rem auto 1rem auto;
+
+            & h1 {
+                margin-bottom: 1.0rem;
+            }
+            
+            // column set to single col
+            & .columns2 {
+                // border: 1px solid red;
+                // column-width: 48%;
+                column-count: 1;
+                // column-gap: 4%;
+            }
+        }
+}
+

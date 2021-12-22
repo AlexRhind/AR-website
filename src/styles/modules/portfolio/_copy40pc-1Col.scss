@@ -1,46 +1,40 @@
 @use "../../base" as *;
 
-// .flexi{
-//     height: clamp(5px, 10px, 8%);
-//     background-color: purple;
-// }
-
 // controls both copy40pc-1Col - About and Portfolio partials
-
 
 section .copy40pc-wrapper {
     margin: 5rem auto 2rem auto;
     // border: 1px solid green;
+    width: clamp(70%, 530px, 40%);
+    max-width: 700px;
+
 }
 
 .col1 {
-    // border: 1px solid red;
-    margin: 0 auto;
-    width: clamp(60%, 530px, 40%);
 
     h1 { 
-        margin: 0 8% 1rem 0;
+        margin: 0 0 1rem 0;
         text-align: center;
     }
 
     p {
         color: $dark-grey;
+        //gives the impression of being centred (range left text)
+        padding-left: 3%;
     }
-}
-
-@include break(623px) {
-//  do stuff
 }
 
 .workLinks {
     // border: 1px solid red;
     
     ul {
+        // border: 1px solid green;
         text-align: center;
-        margin: 5% 3% 0 0;
+        margin: 5% 0 0 0;
     }
 
-    //uses _button.scss
+    // #Anchor .worklinks in pfolio page
+    // uses _button.scss
     li.button {
         display: inline-block;
         height: 50px;
@@ -57,6 +51,7 @@ section .copy40pc-wrapper {
         cursor: pointer;
 
         &.enviro {
+            // border: 1px solid purple;
             border-top: 4px solid $turq;
             margin-right: 30px;
                 &:hover{
@@ -64,6 +59,7 @@ section .copy40pc-wrapper {
                 }
             }
         &.social {
+            // border: 1px solid purple;
             border-top: 4px solid $sand;
             margin-right: 30px;
                 &:hover{
@@ -71,6 +67,7 @@ section .copy40pc-wrapper {
                 }
             }
         &.infographics {
+            // border: 1px solid purple;
             border-top: 4px solid $terra;
                 &:hover{
                 border-color: darken($terra, 10%);    
@@ -81,6 +78,17 @@ section .copy40pc-wrapper {
 }
 
 
-@include break(709px) {
-    // do something here
-}
+@include break(770px) {
+
+    .worklinks ul {
+    }
+
+    li.button {
+        &.enviro, &.social, &.infographics {
+            display: inline-block;
+            margin: 1em 15% 0 15% !important; 
+            text-align: center;
+            }
+        }
+    }
+    
