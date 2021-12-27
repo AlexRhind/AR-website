@@ -1,10 +1,10 @@
 
 
 // NavMenuMobile - Mobile styling - MAX of 702px wide
-const MediaQueryMobile = window.matchMedia('max-width: 702px')
+const MediaQueryMobile = window.matchMedia('(max-width: 709px)')
 
 // NavMenuDesktop - Desktop styling - MIN of 703px wide
-const MediaQueryDesktop = window.matchMedia('min-width: 703px')
+const MediaQueryDesktop = window.matchMedia('(min-width: 710px)')
 
 
 // Mobile menu 
@@ -12,12 +12,16 @@ function NavMenuMobile(e) {
 
     if (e.matches) {
 
-        console.log('MQOne Mobile max-width: 702px')
+        console.log('MQOne Mobile max-width: 709px')
 
         // ensure mobile nav is hidden on loading the page
-        $('#siteLinks').css('display','none');
+        let navShow = getComputedStyle(document.documentElement).getPropertyValue('--navShow');
 
-        $('#menuIcon').click(function () {
+        console.log("Mobile//var --navShow is " + navShow)
+
+        document.documentElement.style.setProperty('--navShow', '0');
+
+        $('#menuIcon').on('click', function () {
 
             $('#siteLinks').fadeToggle();
         })
@@ -29,11 +33,14 @@ function NavMenuDesktop(e) {
 
     if (e.matches) {
 
-        console.log('MQTwo Desktop min-width: 703px')
+        console.log('MQTwo Desktop min-width: 710px')
 
         // ensure the desktop nav is shown on loading the page
-        $('#siteLinks').css('display','block');
+        let navShow = getComputedStyle(document.documentElement).getPropertyValue('--navShow');
 
+        console.log("Desktop//var --navShow is " + navShow)
+
+        document.documentElement.style.setProperty('--navShow', '1');
     }
 }
 
