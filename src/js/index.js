@@ -3,6 +3,7 @@
 import '../styles/main.scss';
 
 import './slider.js';
+import './navToggleOnly';
 import './nav-active.js';
 import './linkDivPages.js';
 import './backToTopButton.js';

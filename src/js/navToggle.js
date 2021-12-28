@@ -19,7 +19,7 @@ function NavMenuMobile(e) {
 
         console.log("Mobile//var --navShow is " + navShow)
 
-        document.documentElement.style.setProperty('--navShow', '0');
+        // document.documentElement.style.setProperty('--navShow', '0');
 
         $('#menuIcon').on('click', function () {
 

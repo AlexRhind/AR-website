@@ -1,5 +1,13 @@
 @use "../base" as *;
 
+// Includes a css variable set/get in navToggle.js -
+// :root {
+
+//     //Set initial display:block so visible
+//     --navShow: block;
+// }
+
+
 //  Mobile styling starts 709px
 @include break(709px) {
 
@@ -10,19 +18,19 @@
         // Hide the desktop navTopBar div
         nav .navTopBar {display: none}
 
-        // Swap to white logo on mobile
+        // show the 139 white logo on mobile
         nav .navLogo a img.white139 {
             width: 180px;
             display: block;
             margin: 19px 0 0 30px;
         }
         
+        // Hide the desktop 139 logo
         nav .navLogo a img.navy139 {
             display: none;
-
         }
 
-        // Mobile nav wrapper $navy and style nav menu */
+        // Mobile nav wrapper $navy and style nav menu
         // Allow div contents to be positioned (pos:relative)
         nav .grid-wrapper {
             display: block;
@@ -30,14 +38,14 @@
             position: relative;
         }
         
-        /* Hide the links inside the navigation menu (except for logo/home) */
+        //navToggle.js | Hide/show the links inside the nav menu
+        //css variables are get/set in js 
         #siteLinks {
-            display: none;
+            display: var(--navShow);
         }
 
         // Position mobile menu to appear under nav wrapper | Z-index for index slider
         .grid-wrapper ul {
-            // display: none;
             position: absolute;
             left: 0;
             top:70px;
