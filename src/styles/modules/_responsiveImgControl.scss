@@ -1,0 +1,67 @@
+
+// Static hero control
+
+.heroImgWrapper{
+    // border: 1px solid red;
+    margin: 0 auto;
+    width: 100vh;
+    height: 35vh;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .heroImg{
+    position: absolute;
+    // opacity:0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+  }
+  
+
+
+
+
+
+
+
+// simple gallery controls 
+
+// .xxx{
+//     margin:0 auto;
+//     width: 100vh;
+//     height:35vh;
+//     overflow:hidden;
+//     position:relative;
+  
+//   }
+  
+//   .xxxxxxx{
+//     position:absolute;
+    // animation:round #{$total_animation_time}s infinite;
+//     opacity:0;
+//     height: 100%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translateX(-50%) translateY(-50%);  
+//   }
+
+
+//   @keyframes round{   
+//     25%{
+//       opacity:1;
+//     }
+//     40%{
+//       opacity:0;
+//     }
+//   } 
+  
+//   @for $index from 1 to $slides + 1{
+//     img:nth-child(#{$index}){
+//       animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+//     }
+//   }
+     
+  

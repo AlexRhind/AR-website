@@ -6,6 +6,8 @@ const MediaQueryMobile = window.matchMedia('(max-width: 709px)')
 // NavMenuDesktop - Desktop styling - MIN of 703px wide
 const MediaQueryDesktop = window.matchMedia('(min-width: 710px)')
 
+var navMenu = $('#navMenu');
+
 
 // Mobile menu 
 function NavMenuMobile(e) {
