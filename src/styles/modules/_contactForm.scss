@@ -3,15 +3,17 @@
 @use "../base" as *;
 
 // World map
-.topImg {
-    width: 100%;
-    min-height: 40vh;
-    background-color: lightgray;
-}
+// .topImg {
+//     width: 100%;
+//     min-height: 40vh;
+//     background-color: white;
+// }
 
 .copyBlock {
     margin: 4rem 25% 3rem 12%;
-   // border: 1px solid red;
+    //min-size fcn - uses the SMALLEST value of these -
+    width: min(600px, 50%);
+    // border: 1px solid red;
 }
 
 .formBlock {
