@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>139 Design | Home</title>
+        <style>
+            /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+            @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,300;1,500&family=Bitter:ital,wght@0,200;0,300;0,500;0,800;0,900;1,200;1,300;1,500;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=swap');
+            @import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=swap');
+</style>
+</head>
+
+
+<body>
+
+    <!-- To run build, delete "main": "index.js", from package.json -->
+
+    <!-- _site-vh-control.scss for footer-to-bottom -->
+    <div class="site-wrapper">
+        <nav>
+            <include src="./partials/nav.html"></include>
+        </nav>
+
+        <!-- insert all page content inside site-wrapper -->
+        <!-- Partials use the level of the masterpage: refs do not need folder nesting -->
+        <div class="site-wrapper">
+
+            <include src="./partials/privacyImgCredits.html"></include>
+        
+        <!-- end site-wrapper -->
+        </div>
+
+        <footer>
+            <include src="./partials/footer.html"></include>
+        </footer>
+    </div>
+
+
+    <!-- JS master-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="javascript"></script>
+    <script type="module" src="./js/index.js"></script>
+
+
+</body>
+</html>
+

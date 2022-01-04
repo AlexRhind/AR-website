@@ -1,0 +1,40 @@
+@use "../base" as *;
+
+
+.gridWrapperPrivacy  {
+    // border: 1px solid green;
+    width: 80%;
+    margin: 5rem auto 3rem auto;
+    // margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr, 1fr 1fr;  
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+        "a a b";
+
+        & .a-col {
+            grid-area: a;
+
+                // columns 
+            & .columns2 {
+                // border: 1px solid red;
+                margin-top: 0.3rem;
+                column-width: calc(50% - 2rem);
+                column-count: 2;
+                column-gap: 2rem;
+            }
+        }
+
+        & .b-col {
+            grid-area: b;
+            // border: 1px solid orange;
+            border-left: 1px solid $light-grey;
+            padding-left: 2rem;
+
+        }
+
+        h2 {
+            display: inline-block;
+        }
+
+}
