@@ -1,14 +1,14 @@
-$(".turqLink").click(function() {
+$(".turqLink").on('click', function() {
     window.location = $(this).find("a").attr("href"); 
     return false;
   });
 
-  $(".sandLink").click(function() {
+  $(".sandLink").on('click', function() {
     window.location = $(this).find("a").attr("href"); 
     return false;
   });
 
-  $(".terraLink").click(function() {
+  $(".terraLink").on('click', function() {
     window.location = $(this).find("a").attr("href"); 
     return false;
   });

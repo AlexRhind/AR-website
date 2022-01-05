@@ -7,7 +7,7 @@
     margin: 5rem auto 3rem auto;
     // margin-inline: auto;
     display: grid;
-    grid-template-columns: 1fr, 1fr 1fr;  
+    grid-template-columns: 1fr, 1fr, 1fr;  
     grid-gap: 1.5rem;
     grid-template-areas: 
         "a a b";
@@ -19,7 +19,7 @@
             & .columns2 {
                 // border: 1px solid red;
                 margin-top: 0.3rem;
-                column-width: calc(50% - 2rem);
+                column-width: calc(50% - 1.5rem);
                 column-count: 2;
                 column-gap: 2rem;
             }
@@ -29,12 +29,81 @@
             grid-area: b;
             // border: 1px solid orange;
             border-left: 1px solid $light-grey;
-            padding-left: 2rem;
+            padding-left: 1.6rem;
 
         }
 
         h2 {
             display: inline-block;
         }
+
+}
+
+// Make 2 cols
+@include break(780px) {
+
+    .gridWrapperPrivacy  {
+        // width: 80%;
+        // margin: 5rem auto 3rem auto;
+        // margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;  
+        grid-gap: 1.5rem;
+        grid-template-areas: 
+            "a b";
+    
+            & .a-col {
+                // border: 1px solid green;
+                grid-area: a;
+                border-right: 1px solid $light-grey;
+                padding-right: 1.5rem;
+    
+                    // delete 2 col setting 
+                & .columns2 {
+                    // border: 1px solid red;
+                    margin-top: 0.3rem;
+                    column-width: 100%;
+                    column-count: 1;
+                    column-gap: 0;
+                }
+            }
+    
+            & .b-col {
+                grid-area: b;
+                // border: 1px solid orange;
+                border-left: none;
+                padding: 0;
+                padding-right: 0rem;
+    
+            }
+    }
+
+}
+
+// Make 1 cols
+@include break(592px) {
+
+    .gridWrapperPrivacy  {
+        // make single column
+        margin: 3rem auto 3rem auto;
+        display: block;
+    
+            & .a-col {
+                // border: 1px solid green;
+                // grid-area: a;
+                border-right: none;
+                padding-right: 0rem;
+            }
+    
+            & .b-col {
+                margin-top: 3rem;
+                // grid-area: b;
+                // border: 1px solid orange;
+                // border-left: none;
+                // padding: 0;
+                // padding-right: 0rem;
+    
+            }
+    }
 
 }
