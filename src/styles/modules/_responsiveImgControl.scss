@@ -1,5 +1,6 @@
 
 // Static hero control
+// Contact map, 
 
 .heroImgWrapper{
     // border: 1px solid red;
@@ -22,49 +23,30 @@
     left: 50%;
     transform: translateX(-48%) translateY(-20%);
   }
-  
 
 
+// 2:1 image control
+// About main img, 
 
+// .ratio1-2Wrapper{
+  // border: 1px solid red;
+  // height: 40vh; //max(50vh, 200px)
+  // margin-inline: auto;
+  // margin:0 auto;
+  // overflow: hidden;
+  // position: relative;
+// }
 
-
-
-
-// simple gallery controls 
-
-// .xxx{
-//     margin:0 auto;
-//     width: 100vh;
-//     height:35vh;
-//     overflow:hidden;
-//     position:relative;
-  
-//   }
-  
-//   .xxxxxxx{
-//     position:absolute;
-    // animation:round #{$total_animation_time}s infinite;
-//     opacity:0;
-//     height: 100%;
-//     top: 50%;
-//     left: 50%;
-//     transform: translateX(-50%) translateY(-50%);  
-//   }
-
-
-//   @keyframes round{   
-//     25%{
-//       opacity:1;
-//     }
-//     40%{
-//       opacity:0;
-//     }
-//   } 
-  
-//   @for $index from 1 to $slides + 1{
-//     img:nth-child(#{$index}){
-//       animation-delay:#{$total_animation_time - $time_per_slide * $index}s
-//     }
-//   }
-     
-  
+.ratio1-2Img{
+  border: 1px solid green;
+  object-fit: cover;  
+  object-position: left top;
+  // margin-inline: auto;
+  // height: 100%;
+  // width: 100%;
+  background-color: lightgray;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translateX(-48%) translateY(-50%);
+}
